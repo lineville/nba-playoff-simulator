@@ -1,0 +1,19 @@
+{
+  "name": "nba-playoff-simulator",
+  "version": "1.0.0",
+  "description": "Dynamic, interactive and predictive application for the NBA Playoffs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lineville/nba-playoff-simulator.git"
+  },
+  "author": "Liam Neville",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lineville/nba-playoff-simulator/issues"
+  },
+  "homepage": "https://github.com/lineville/nba-playoff-simulator#readme"
+}
