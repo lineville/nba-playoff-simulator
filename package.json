@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/lineville/nba-playoff-simulator/issues"
   },
-  "homepage": "https://github.com/lineville/nba-playoff-simulator#readme"
+  "homepage": "https://github.com/lineville/nba-playoff-simulator#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "husky": "^1.0.0-rc.8"
+  }
 }
