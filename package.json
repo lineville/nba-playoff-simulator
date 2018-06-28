@@ -4,6 +4,8 @@
   "description": "Dynamic, interactive and predictive application for the NBA Playoffs.",
   "main": "index.js",
   "scripts": {
+    "start": "webpack -w & nodemon --watch server -e js,html server/main.js",
+    "seed": "node ./bin/seed",
     "test": "npm test"
   },
   "repository": {
@@ -17,10 +19,26 @@
   },
   "homepage": "https://github.com/lineville/nba-playoff-simulator#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.16.3",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1",
+    "sequelize": "^4.38.0"
   },
   "devDependencies": {
-    "husky": "^1.0.0-rc.8"
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "husky": "^1.0.0-rc.8",
+    "lorem-hipsum": "^0.1.7",
+    "nodemon": "^1.17.5",
+    "webpack": "^4.12.2",
+    "webpack-cli": "^3.0.8"
   }
 }
