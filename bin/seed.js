@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-
-const hipsum = require('lorem-hipsum')
 const { db, Player, Team } = require('../server/db')
 
 const seed = async () => {
   await db.sync({ force: true })
 
   //Create Teams for 2018 Playoffs
+  //Teams will be filled only with players who had
+  //at least 20 mins a game, out of convenience
   const raptors = await Team.create({
     name: 'Raptors',
     city: 'Toronto',
@@ -119,15 +119,72 @@ const seed = async () => {
     seed: 8,
   })
 
-  //Create the starting 5 for each team with stats
+  // Raptors Players
+  const deMarDeRozan = await Player.create({
+    name: 'DeMar DeRozan',
+    pointsPerGame: 23.0,
+    assistsPerGame: 5.2,
+    reboundsPerGame: 3.9,
+    playerEfficiency: 13.5,
+    allStarGames: 4,
+    mvps: 0,
+    teamId: raptors.id,
+  })
+  const kyleLowry = await Player.create({
+    name: 'Kyle Lowry',
+    pointsPerGame: 16.2,
+    assistsPerGame: 6.9,
+    reboundsPerGame: 5.6,
+    playerEfficiency: 13.6,
+    allStarGames: 0,
+    mvps: 0,
+    teamId: raptors.id,
+  })
+
+  const jonasValunciunas = await Player.create({
+    name: 'Jonas Valanciunas',
+    pointsPerGame: 12.7,
+    assistsPerGame: 1.1,
+    reboundsPerGame: 8.6,
+    playerEfficiency: 15.1,
+    allStarGames: 4,
+    mvps: 0,
+    teamId: raptors.id,
+  })
+
+  const cjMiles = await Player.create({
+    name: 'CJ Miles',
+    pointsPerGame: 10,
+    assistsPerGame: 0.8,
+    reboundsPerGame: 2.2,
+    playerEfficiency: 7.7,
+    allStarGames: 0,
+    mvps: 0,
+    teamId: raptors.id,
+  })
+
+  const sergeIbaka = await Player.create({
+    name: 'Serge Ibaka',
+    pointsPerGame: 12.6,
+    assistsPerGame: 0.8,
+    reboundsPerGame: 6.3,
+    playerEfficiency: 9.8,
+    allStarGames: 0,
+    mvps: 0,
+    teamId: raptors.id,
+  })
+
   const rondo = await Player.create({
     name: 'Rajon Rondo',
-    pointsPerGame: 15,
-    assistsPerGame: 12,
-    reboundsPerGame: 8,
-    playoffExperience: 5,
+    pointsPerGame: 8.3,
+    assistsPerGame: 8.2,
+    reboundsPerGame: 4.0,
+    playerEfficiency: 11.5,
+    mvps: 0,
     teamId: celtics.id,
   })
+
+  //Close the db and log successful seed
   db.close()
   console.log(`Seed successful!`)
 }

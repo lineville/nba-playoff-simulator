@@ -7,18 +7,22 @@ const Player = db.define('player', {
     allowNull: false,
   },
   pointsPerGame: {
-    type: Sequelize.INTEGER,
+    type: Sequelize.DOUBLE,
     allowNull: false,
   },
   assistsPerGame: {
-    type: Sequelize.INTEGER,
+    type: Sequelize.DOUBLE,
     allowNull: false,
   },
   reboundsPerGame: {
-    type: Sequelize.INTEGER,
+    type: Sequelize.DOUBLE,
     allowNull: false,
   },
-  playoffExperience: {
+  playerEfficiency: {
+    type: Sequelize.DOUBLE,
+    allowNull: false,
+  },
+  mvps: {
     type: Sequelize.INTEGER,
     allowNull: false,
   },
