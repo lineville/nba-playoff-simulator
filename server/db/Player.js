@@ -22,6 +22,10 @@ const Player = db.define('player', {
     type: Sequelize.DOUBLE,
     allowNull: false,
   },
+  allStarGames: {
+    type: Sequelize.DOUBLE,
+    allowNull: false,
+  },
   mvps: {
     type: Sequelize.INTEGER,
     allowNull: false,

@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import { HashRouter as Router } from 'react-router-dom'
-import { Bracket } from 'react-tournament-bracket'
-import { render } from 'react-dom'
 export default class Main extends Component {
   constructor() {
     super()
@@ -18,7 +16,6 @@ export default class Main extends Component {
     return (
       <Router>
         <h1>WELCOME TO NBA SIMULATOR!</h1>
-        <Bracket />
       </Router>
     )
   }
