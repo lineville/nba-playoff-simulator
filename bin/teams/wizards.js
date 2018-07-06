@@ -7,7 +7,7 @@ const wizardsPlayers = [
     playerEfficiency: 13.0,
     allStarGames: 5,
     mvps: 0,
-    teamId: 8,
+    teamId: 10,
   },
   {
     name: 'Bradley Beal',
@@ -17,7 +17,7 @@ const wizardsPlayers = [
     playerEfficiency: 12.5,
     allStarGames: 1,
     mvps: 0,
-    teamId: 8,
+    teamId: 10,
   },
   {
     name: 'Mike Scott',
@@ -27,7 +27,7 @@ const wizardsPlayers = [
     playerEfficiency: 9.6,
     allStarGames: 0,
     mvps: 0,
-    teamId: 8,
+    teamId: 10,
   },
   {
     name: 'Kelly Oubre Jr',
@@ -37,7 +37,7 @@ const wizardsPlayers = [
     playerEfficiency: 7.9,
     allStarGames: 0,
     mvps: 0,
-    teamId: 8,
+    teamId: 10,
   },
   {
     name: 'Otto Porter Jr',
@@ -47,7 +47,7 @@ const wizardsPlayers = [
     playerEfficiency: 12.4,
     allStarGames: 0,
     mvps: 0,
-    teamId: 8,
+    teamId: 10,
   },
   {
     name: 'Ty Lawson',
@@ -57,7 +57,7 @@ const wizardsPlayers = [
     playerEfficiency: 10.6,
     allStarGames: 0,
     mvps: 0,
-    teamId: 8,
+    teamId: 10,
   },
 ]
 

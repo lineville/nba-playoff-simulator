@@ -7,7 +7,7 @@ const heatPlayers = [
     playerEfficiency: 11.6,
     allStarGames: 1,
     mvps: 0,
-    teamId: 6,
+    teamId: 14,
   },
   {
     name: 'Dwyane Wade',
@@ -17,7 +17,7 @@ const heatPlayers = [
     playerEfficiency: 10.4,
     allStarGames: 12,
     mvps: 2,
-    teamId: 6,
+    teamId: 14,
   },
   {
     name: 'Keylly Olynyk',
@@ -27,7 +27,7 @@ const heatPlayers = [
     playerEfficiency: 12.2,
     allStarGames: 0,
     mvps: 0,
-    teamId: 6,
+    teamId: 14,
   },
   {
     name: 'James Johnson',
@@ -37,7 +37,7 @@ const heatPlayers = [
     playerEfficiency: 11.2,
     allStarGames: 0,
     mvps: 0,
-    teamId: 6,
+    teamId: 14,
   },
   {
     name: 'Josh Richardson',
@@ -47,7 +47,7 @@ const heatPlayers = [
     playerEfficiency: 8.6,
     allStarGames: 0,
     mvps: 0,
-    teamId: 6,
+    teamId: 14,
   },
   {
     name: 'Wayne Ellington',
@@ -57,7 +57,7 @@ const heatPlayers = [
     playerEfficiency: 8.5,
     allStarGames: 0,
     mvps: 0,
-    teamId: 6,
+    teamId: 14,
   },
 ]
 

@@ -7,7 +7,7 @@ const timberwolvesPlayers = [
     playerEfficiency: 15.1,
     allStarGames: 4,
     mvps: 0,
-    teamId: 16,
+    teamId: 2,
   },
   {
     name: 'Andrew Wiggins',
@@ -17,7 +17,7 @@ const timberwolvesPlayers = [
     playerEfficiency: 7.6,
     allStarGames: 0,
     mvps: 0,
-    teamId: 16,
+    teamId: 2,
   },
   {
     name: 'Karl-Anthony Towns',
@@ -27,7 +27,7 @@ const timberwolvesPlayers = [
     playerEfficiency: 16.5,
     allStarGames: 1,
     mvps: 0,
-    teamId: 16,
+    teamId: 2,
   },
   {
     name: 'Derrick Rose',
@@ -37,7 +37,7 @@ const timberwolvesPlayers = [
     playerEfficiency: 6.8,
     allStarGames: 3,
     mvps: 1,
-    teamId: 16,
+    teamId: 2,
   },
   {
     name: 'Jeff Teague',
@@ -47,7 +47,7 @@ const timberwolvesPlayers = [
     playerEfficiency: 10.5,
     allStarGames: 1,
     mvps: 0,
-    teamId: 16,
+    teamId: 2,
   },
   {
     name: 'Jamal Crawford',
@@ -57,7 +57,7 @@ const timberwolvesPlayers = [
     playerEfficiency: 7.9,
     allStarGames: 0,
     mvps: 0,
-    teamId: 16,
+    teamId: 2,
   },
   {
     name: 'Taj Gibson',
@@ -67,7 +67,7 @@ const timberwolvesPlayers = [
     playerEfficiency: 9.4,
     allStarGames: 0,
     mvps: 0,
-    teamId: 16,
+    teamId: 2,
   },
 ]
 

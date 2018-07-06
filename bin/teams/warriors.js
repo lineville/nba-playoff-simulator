@@ -7,7 +7,7 @@ const warriorsPlayers = [
     playerEfficiency: 16.8,
     allStarGames: 9,
     mvps: 4,
-    teamId: 10,
+    teamId: 3,
   },
   {
     name: 'Klay Thompson',
@@ -17,7 +17,7 @@ const warriorsPlayers = [
     playerEfficiency: 10.3,
     allStarGames: 4,
     mvps: 0,
-    teamId: 10,
+    teamId: 3,
   },
   {
     name: 'Stephen Curry',
@@ -27,7 +27,7 @@ const warriorsPlayers = [
     playerEfficiency: 16.5,
     allStarGames: 5,
     mvps: 2,
-    teamId: 10,
+    teamId: 3,
   },
   {
     name: 'Draymond Green',
@@ -37,7 +37,7 @@ const warriorsPlayers = [
     playerEfficiency: 11.7,
     allStarGames: 3,
     mvps: 0,
-    teamId: 10,
+    teamId: 3,
   },
   {
     name: 'Andre Iguodala',
@@ -47,7 +47,7 @@ const warriorsPlayers = [
     playerEfficiency: 8.1,
     allStarGames: 1,
     mvps: 0,
-    teamId: 10,
+    teamId: 3,
   },
   {
     name: 'Shaun Livingston',
@@ -57,7 +57,7 @@ const warriorsPlayers = [
     playerEfficiency: 7.5,
     allStarGames: 0,
     mvps: 0,
-    teamId: 10,
+    teamId: 3,
   },
 ]
 

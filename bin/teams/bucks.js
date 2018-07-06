@@ -7,7 +7,7 @@ const bucksPlayers = [
     playerEfficiency: 10.8,
     allStarGames: 2,
     mvps: 0,
-    teamId: 7,
+    teamId: 12,
   },
   {
     name: 'Khris Middleton',
@@ -17,7 +17,7 @@ const bucksPlayers = [
     playerEfficiency: 11.4,
     allStarGames: 0,
     mvps: 0,
-    teamId: 7,
+    teamId: 12,
   },
   {
     name: 'Eric Bledsoe',
@@ -27,7 +27,7 @@ const bucksPlayers = [
     playerEfficiency: 12.5,
     allStarGames: 0,
     mvps: 0,
-    teamId: 7,
+    teamId: 12,
   },
   {
     name: 'Jabari Parker',
@@ -37,7 +37,7 @@ const bucksPlayers = [
     playerEfficiency: 11.1,
     allStarGames: 0,
     mvps: 0,
-    teamId: 7,
+    teamId: 12,
   },
   {
     name: 'Malcom Brogdon',
@@ -47,7 +47,7 @@ const bucksPlayers = [
     playerEfficiency: 9.4,
     allStarGames: 0,
     mvps: 0,
-    teamId: 7,
+    teamId: 12,
   },
   {
     name: 'Thon Maker',
@@ -57,7 +57,7 @@ const bucksPlayers = [
     playerEfficiency: 5.0,
     allStarGames: 0,
     mvps: 0,
-    teamId: 7,
+    teamId: 12,
   },
   {
     name: 'John Henson',
@@ -67,7 +67,7 @@ const bucksPlayers = [
     playerEfficiency: 9.7,
     allStarGames: 0,
     mvps: 0,
-    teamId: 7,
+    teamId: 12,
   },
 ]
 

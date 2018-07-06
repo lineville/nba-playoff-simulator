@@ -7,7 +7,7 @@ const pelicansPlayers = [
     playerEfficiency: 18.8,
     allStarGames: 5,
     mvps: 0,
-    teamId: 14,
+    teamId: 6,
   },
   {
     name: 'Jrue Holiday',
@@ -17,7 +17,7 @@ const pelicansPlayers = [
     playerEfficiency: 11.8,
     allStarGames: 1,
     mvps: 0,
-    teamId: 14,
+    teamId: 6,
   },
   {
     name: 'Nikola Mirotic',
@@ -27,7 +27,7 @@ const pelicansPlayers = [
     playerEfficiency: 13.0,
     allStarGames: 0,
     mvps: 0,
-    teamId: 14,
+    teamId: 6,
   },
   {
     name: `E'Twaun Moore`,
@@ -37,7 +37,7 @@ const pelicansPlayers = [
     playerEfficiency: 7.3,
     allStarGames: 0,
     mvps: 0,
-    teamId: 14,
+    teamId: 6,
   },
   {
     name: 'Rajon Rondo',
@@ -47,7 +47,7 @@ const pelicansPlayers = [
     playerEfficiency: 11.5,
     allStarGames: 4,
     mvps: 0,
-    teamId: 14,
+    teamId: 6,
   },
   {
     name: 'Ian Clark',
@@ -57,7 +57,7 @@ const pelicansPlayers = [
     playerEfficiency: 0.0,
     allStarGames: 0,
     mvps: 0,
-    teamId: 14,
+    teamId: 6,
   },
 ]
 

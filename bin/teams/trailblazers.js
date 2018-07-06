@@ -7,7 +7,7 @@ const trailblazersPlayers = [
     playerEfficiency: 10.9,
     allStarGames: 0,
     mvps: 0,
-    teamId: 11,
+    teamId: 5,
   },
   {
     name: 'Damian Lillard',
@@ -17,7 +17,7 @@ const trailblazersPlayers = [
     playerEfficiency: 16.5,
     allStarGames: 3,
     mvps: 0,
-    teamId: 11,
+    teamId: 5,
   },
   {
     name: 'Al-Farouq Aminu',
@@ -27,7 +27,7 @@ const trailblazersPlayers = [
     playerEfficiency: 9.0,
     allStarGames: 0,
     mvps: 0,
-    teamId: 11,
+    teamId: 5,
   },
   {
     name: 'Jusuf Nurkic',
@@ -37,7 +37,7 @@ const trailblazersPlayers = [
     playerEfficiency: 12.7,
     allStarGames: 0,
     mvps: 0,
-    teamId: 11,
+    teamId: 5,
   },
   {
     name: 'Zach Collins',
@@ -47,7 +47,7 @@ const trailblazersPlayers = [
     playerEfficiency: 5.2,
     allStarGames: 0,
     mvps: 0,
-    teamId: 11,
+    teamId: 5,
   },
   {
     name: 'Evan Turner',
@@ -57,7 +57,7 @@ const trailblazersPlayers = [
     playerEfficiency: 7.1,
     allStarGames: 0,
     mvps: 0,
-    teamId: 11,
+    teamId: 5,
   },
   {
     name: 'Maurice Harkless',
@@ -67,7 +67,7 @@ const trailblazersPlayers = [
     playerEfficiency: 7.2,
     allStarGames: 0,
     mvps: 0,
-    teamId: 11,
+    teamId: 5,
   },
 ]
 

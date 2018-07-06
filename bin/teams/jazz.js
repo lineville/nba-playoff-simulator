@@ -7,7 +7,7 @@ const jazzPlayers = [
     playerEfficiency: 10.9,
     allStarGames: 0,
     mvps: 0,
-    teamId: 12,
+    teamId: 7,
   },
   {
     name: 'Joe Ingles',
@@ -17,7 +17,7 @@ const jazzPlayers = [
     playerEfficiency: 10.7,
     allStarGames: 0,
     mvps: 0,
-    teamId: 12,
+    teamId: 7,
   },
   {
     name: 'Rudy Gobert',
@@ -27,7 +27,7 @@ const jazzPlayers = [
     playerEfficiency: 14.7,
     allStarGames: 0,
     mvps: 0,
-    teamId: 12,
+    teamId: 7,
   },
   {
     name: 'Jae Crowder',
@@ -37,7 +37,7 @@ const jazzPlayers = [
     playerEfficiency: 6.1,
     allStarGames: 0,
     mvps: 0,
-    teamId: 12,
+    teamId: 7,
   },
   {
     name: 'Derrick Favors',
@@ -47,7 +47,7 @@ const jazzPlayers = [
     playerEfficiency: 11.9,
     allStarGames: 0,
     mvps: 0,
-    teamId: 12,
+    teamId: 7,
   },
   {
     name: 'Ricky Rubio',
@@ -57,7 +57,7 @@ const jazzPlayers = [
     playerEfficiency: 11.5,
     allStarGames: 0,
     mvps: 0,
-    teamId: 12,
+    teamId: 7,
   },
   {
     name: 'Alec Burks',
@@ -67,7 +67,7 @@ const jazzPlayers = [
     playerEfficiency: 10.1,
     allStarGames: 0,
     mvps: 0,
-    teamId: 12,
+    teamId: 7,
   },
   {
     name: `Royce O'Neal`,
@@ -77,7 +77,7 @@ const jazzPlayers = [
     playerEfficiency: 9.2,
     allStarGames: 0,
     mvps: 0,
-    teamId: 12,
+    teamId: 7,
   },
 ]
 

@@ -9,7 +9,7 @@ const Team = props => {
       </li>
     )
   } else {
-    return <li>TEAM</li>
+    return `Loading...`
   }
 }
 

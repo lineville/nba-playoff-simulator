@@ -7,7 +7,7 @@ const spursPlayers = [
     playerEfficiency: 15.9,
     allStarGames: 4,
     mvps: 0,
-    teamId: 15,
+    teamId: 4,
   },
   {
     name: 'Patty Mills',
@@ -17,7 +17,7 @@ const spursPlayers = [
     playerEfficiency: 7.5,
     allStarGames: 0,
     mvps: 0,
-    teamId: 15,
+    teamId: 4,
   },
   {
     name: 'Rudy Gay',
@@ -27,7 +27,7 @@ const spursPlayers = [
     playerEfficiency: 12.5,
     allStarGames: 0,
     mvps: 0,
-    teamId: 15,
+    teamId: 4,
   },
   {
     name: 'Manu Ginobili',
@@ -37,7 +37,7 @@ const spursPlayers = [
     playerEfficiency: 8.5,
     allStarGames: 2,
     mvps: 0,
-    teamId: 15,
+    teamId: 4,
   },
   {
     name: 'Dejounte Murray',
@@ -47,7 +47,7 @@ const spursPlayers = [
     playerEfficiency: 11.7,
     allStarGames: 0,
     mvps: 0,
-    teamId: 15,
+    teamId: 4,
   },
   {
     name: 'Tony Parker',
@@ -57,7 +57,7 @@ const spursPlayers = [
     playerEfficiency: 9.4,
     allStarGames: 6,
     mvps: 0,
-    teamId: 15,
+    teamId: 4,
   },
   {
     name: 'Pau Gasol',
@@ -67,7 +67,7 @@ const spursPlayers = [
     playerEfficiency: 15.0,
     allStarGames: 6,
     mvps: 0,
-    teamId: 15,
+    teamId: 4,
   },
   {
     name: 'Danny Green',
@@ -77,7 +77,7 @@ const spursPlayers = [
     playerEfficiency: 7.3,
     allStarGames: 0,
     mvps: 0,
-    teamId: 15,
+    teamId: 4,
   },
 ]
 

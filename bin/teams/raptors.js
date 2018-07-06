@@ -7,7 +7,7 @@ const raptorsPlayers = [
     playerEfficiency: 13.5,
     allStarGames: 4,
     mvps: 0,
-    teamId: 1,
+    teamId: 9,
   },
   {
     name: 'Kyle Lowry',
@@ -17,7 +17,7 @@ const raptorsPlayers = [
     playerEfficiency: 13.6,
     allStarGames: 0,
     mvps: 0,
-    teamId: 1,
+    teamId: 9,
   },
 
   {
@@ -28,7 +28,7 @@ const raptorsPlayers = [
     playerEfficiency: 15.1,
     allStarGames: 4,
     mvps: 0,
-    teamId: 1,
+    teamId: 9,
   },
 
   {
@@ -39,7 +39,7 @@ const raptorsPlayers = [
     playerEfficiency: 7.7,
     allStarGames: 0,
     mvps: 0,
-    teamId: 1,
+    teamId: 9,
   },
 
   {
@@ -50,7 +50,7 @@ const raptorsPlayers = [
     playerEfficiency: 9.8,
     allStarGames: 0,
     mvps: 0,
-    teamId: 1,
+    teamId: 9,
   },
 
   {
@@ -61,7 +61,7 @@ const raptorsPlayers = [
     playerEfficiency: 11.6,
     allStarGames: 0,
     mvps: 0,
-    teamId: 1,
+    teamId: 9,
   },
 
   {
@@ -72,7 +72,7 @@ const raptorsPlayers = [
     playerEfficiency: 5.6,
     allStarGames: 0,
     mvps: 0,
-    teamId: 1,
+    teamId: 9,
   },
 ]
 

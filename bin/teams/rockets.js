@@ -7,7 +7,6 @@ const rocketsPlayers = [
     playerEfficiency: 19.4,
     allStarGames: 9,
     mvps: 1,
-    teamId: 9,
   },
   {
     name: 'Chris Paul',
@@ -17,7 +16,7 @@ const rocketsPlayers = [
     playerEfficiency: 16.6,
     allStarGames: 10,
     mvps: 0,
-    teamId: 9,
+    teamId: 1,
   },
   {
     name: 'Eric Gordon',
@@ -27,7 +26,7 @@ const rocketsPlayers = [
     playerEfficiency: 9.0,
     allStarGames: 0,
     mvps: 0,
-    teamId: 9,
+    teamId: 1,
   },
   {
     name: 'Clint Capela',
@@ -37,7 +36,7 @@ const rocketsPlayers = [
     playerEfficiency: 15.5,
     allStarGames: 0,
     mvps: 0,
-    teamId: 9,
+    teamId: 1,
   },
   {
     name: 'PJ Tucker',
@@ -47,7 +46,7 @@ const rocketsPlayers = [
     playerEfficiency: 5.9,
     allStarGames: 0,
     mvps: 0,
-    teamId: 9,
+    teamId: 1,
   },
   {
     name: 'Trevor Ariza',
@@ -57,7 +56,7 @@ const rocketsPlayers = [
     playerEfficiency: 7.7,
     allStarGames: 0,
     mvps: 0,
-    teamId: 9,
+    teamId: 1,
   },
 ]
 

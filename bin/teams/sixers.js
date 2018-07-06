@@ -7,7 +7,7 @@ const sixersPlayers = [
     playerEfficiency: 10.8,
     allStarGames: 0,
     mvps: 0,
-    teamId: 3,
+    teamId: 13,
   },
   {
     name: 'Dario Saric',
@@ -17,7 +17,7 @@ const sixersPlayers = [
     playerEfficiency: 11.5,
     allStarGames: 0,
     mvps: 0,
-    teamId: 3,
+    teamId: 13,
   },
   {
     name: 'Joel Embiid',
@@ -27,7 +27,7 @@ const sixersPlayers = [
     playerEfficiency: 17.7,
     allStarGames: 1,
     mvps: 0,
-    teamId: 3,
+    teamId: 13,
   },
   {
     name: 'Ben Simmons',
@@ -37,7 +37,7 @@ const sixersPlayers = [
     playerEfficiency: 15.4,
     allStarGames: 0,
     mvps: 0,
-    teamId: 3,
+    teamId: 13,
   },
   {
     name: 'Marco Belinelli',
@@ -47,7 +47,7 @@ const sixersPlayers = [
     playerEfficiency: 9.3,
     allStarGames: 0,
     mvps: 0,
-    teamId: 3,
+    teamId: 13,
   },
   {
     name: 'Ersan Ilyasova',
@@ -57,7 +57,7 @@ const sixersPlayers = [
     playerEfficiency: 9.9,
     allStarGames: 0,
     mvps: 0,
-    teamId: 3,
+    teamId: 13,
   },
   {
     name: 'Robert Covington',
@@ -67,7 +67,7 @@ const sixersPlayers = [
     playerEfficiency: 9.0,
     allStarGames: 0,
     mvps: 0,
-    teamId: 3,
+    teamId: 13,
   },
 ]
 
