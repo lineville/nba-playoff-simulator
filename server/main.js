@@ -1,6 +1,6 @@
 const PORT = 8080
-const server = require('./index')
-const { db } = require('./db/index')
+const server = require('.')
+const { db } = require('./db')
 
 db.sync().then(() => {
   server.listen(PORT, () =>
