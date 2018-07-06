@@ -2,9 +2,20 @@ const router = require('express').Router()
 const { db, Player, Team } = require('../db/index')
 
 router.get('/teams/', async (req, res, next) => {
-  const allTeams = await Team.findAll()
-  console.log(allTeams)
-  res.json(allTeams)
+  try {
+    const allTeams = await Team.findAll()
+    res.json(allTeams)
+  } catch (error) {
+    next(error)
+  }
 })
 
+router.get('/teams/:teamId', async (req, res, next) => {
+  try {
+    const team = await Team.findById(req.params.teamId)
+    res.json(team)
+  } catch (error) {
+    next(error)
+  }
+})
 module.exports = router

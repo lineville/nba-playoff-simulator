@@ -18,6 +18,14 @@ const Team = db.define('team', {
     type: Sequelize.INTEGER,
     allowNull: false,
   },
+  color: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
+  logoURL: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
 })
 
 module.exports = Team

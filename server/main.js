@@ -5,14 +5,14 @@ const { db } = require('./db/index')
 db.sync().then(() => {
   server.listen(PORT, () =>
     console.log(`
-        ~~~~~~~~~~~~~~~~~~~~~~~~~
-        ----NBA Simulator App----
-
-        Listening on port ${PORT}
-
+        |~~~~~~~~~~~~~~~~~~~~~~~~~|
+        |-----NBA Simulator App---|
+        |                         |
+        |Listening on port ${PORT}|
+        |                         |
         http://localhost:${PORT}/
-
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+        |                         |
+        |~~~~~~~~~~~~~~~~~~~~~~~~~|
 
     `))
 })

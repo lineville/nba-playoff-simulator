@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { HashRouter as Router } from 'react-router-dom'
+import { HashRouter as Router, Link } from 'react-router-dom'
 import axios from 'axios'
 
 export default class Main extends Component {
@@ -21,18 +21,20 @@ export default class Main extends Component {
   render() {
     // Should render the full bracket and form component
     return (
-      // <Router>
-      <div>
-        <h1>2018 NBA Playoffs Simulator!</h1>
+      <Router>
         <div>
-          <ul>
-            {this.state.teams.map((team, idx) => (
-              <li key={idx}>{team.name}</li>
-            ))}
-          </ul>
+          <h1 className="text-center">2018 NBA Playoffs Simulator!</h1>
+          <div>
+            <ul>
+              {this.state.teams.map((team, idx) => (
+                <li style={{ color: team.color }} key={idx}>
+                  {team.seed}. {team.name} <img src={team.logoURL} />
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
-      // </Router>
+      </Router>
     )
   }
 }

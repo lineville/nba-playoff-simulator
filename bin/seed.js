@@ -11,11 +11,11 @@ const seed = async () => {
   //Close the db and log successful seed
   db.close()
   console.log(`
-  ~~~~~~~~~~~~~~~~
-
-  Seed successful!
-
-  ~~~~~~~~~~~~~~~~
+  |~~~~~~~~~~~~~~~~|
+  |                |
+  |Seed successful!|
+  |                |
+  |~~~~~~~~~~~~~~~~|
   `)
 }
 
