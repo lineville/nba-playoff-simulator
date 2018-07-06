@@ -11,6 +11,14 @@ ul {
   list-style-type: none;
 }
 
+ul .east {
+  text-align: right;
+}
+
+ul .west {
+  text-align: left;
+}
+
 span {
   display: inline;
 }

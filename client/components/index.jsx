@@ -1,5 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Main from './Main.jsx'
+import Bracket from './Bracket'
 
-ReactDOM.render(<Main />, document.getElementById('app'))
+ReactDOM.render(<Bracket />, document.getElementById('app'))

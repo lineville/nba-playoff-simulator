@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import { HashRouter as Router, Link } from 'react-router-dom'
 import axios from 'axios'
+import Team from './Team'
+import FirstRound from './FirstRound'
 
-export default class Main extends Component {
+export default class Bracket extends Component {
   constructor() {
     super()
     this.state = {
@@ -18,21 +20,17 @@ export default class Main extends Component {
     console.log(teams)
     this.setState({ teams: teams.data })
   }
+
   render() {
     // Should render the full bracket and form component
     return (
       <Router>
         <div>
           <h1 className="text-center">2018 NBA Playoffs Simulator!</h1>
-          <div>
-            <ul>
-              {this.state.teams.map((team, idx) => (
-                <li style={{ color: team.color }} key={idx}>
-                  {team.seed}. {team.name} <img src={team.logoURL} />
-                </li>
-              ))}
-            </ul>
-          </div>
+          <FirstRound
+            teams={this.state.teams}
+            currentRound={this.currentRound}
+          />
         </div>
       </Router>
     )
