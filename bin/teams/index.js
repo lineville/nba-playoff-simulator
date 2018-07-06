@@ -60,7 +60,7 @@ const teams = [
     seed: 2,
   },
   {
-    name: 'TrailBlazers',
+    name: 'Trail Blazers',
     city: 'Portland',
     conference: 'west',
     seed: 3,
