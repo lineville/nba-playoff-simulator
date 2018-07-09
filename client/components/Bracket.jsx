@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { HashRouter as Router, Link } from 'react-router-dom'
 import axios from 'axios'
-import Team from './Team'
+import Header from './Header'
 import FirstRound from './FirstRound'
 
 export default class Bracket extends Component {
@@ -26,7 +26,7 @@ export default class Bracket extends Component {
     return (
       <Router>
         <div>
-          <h1 className="text-center">2018 NBA Playoffs Simulator!</h1>
+          <Header />
           <FirstRound
             teams={this.state.teams}
             currentRound={this.currentRound}

@@ -4,8 +4,10 @@ import Team from './Team'
 const Matchup = props => {
   return (
     <div className="matchup">
-      <Team team={props.topTeam} />
-      <Team team={props.bottomTeam} />
+      <ul className="list-group">
+        <Team team={props.topTeam} />
+        <Team team={props.bottomTeam} />
+      </ul>
     </div>
   )
 }

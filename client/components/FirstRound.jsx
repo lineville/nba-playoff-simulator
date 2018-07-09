@@ -10,6 +10,7 @@ const Round = props => {
   return (
     <div>
       <div>
+        <h4>Western Conference</h4>
         <ul className="west">
           <Matchup topTeam={westTeams[0]} bottomTeam={westTeams[1]} />
           <Matchup topTeam={westTeams[2]} bottomTeam={westTeams[3]} />
@@ -18,6 +19,7 @@ const Round = props => {
         </ul>
       </div>
       <div>
+        <h4>Eastern Conference</h4>
         <ul className="east">
           <Matchup topTeam={eastTeams[0]} bottomTeam={eastTeams[1]} />
           <Matchup topTeam={eastTeams[2]} bottomTeam={eastTeams[3]} />
