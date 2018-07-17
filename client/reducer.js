@@ -1,9 +1,15 @@
 import axios from 'axios'
 
 export const GET_TEAMS = 'GET_TEAMS'
+export const NEXT_ROUND = 'NEXT_ROUND'
 
 export const getTeams = payload => ({
   type: GET_TEAMS,
+  payload,
+})
+
+export const nextRound = payload => ({
+  type: NEXT_ROUND,
   payload,
 })
 
@@ -29,6 +35,11 @@ const reducer = (state = initState, action) => {
     case GET_TEAMS:
       return {
         ...state,
+        teams: action.payload,
+      }
+    case NEXT_ROUND:
+      return {
+        round: state.round + 1,
         teams: action.payload,
       }
     default:
