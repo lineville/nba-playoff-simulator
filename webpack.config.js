@@ -1,5 +1,7 @@
+const { resolve } = require('path')
+
 module.exports = {
-  entry: ['babel-polyfill', './client/components/index.jsx'],
+  entry: ['babel-polyfill', './client/index.js'],
   output: {
     path: __dirname,
     filename: './public/bundle.js',
@@ -13,6 +15,11 @@ module.exports = {
         test: /jsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
+        include: resolve(__dirname, './client'),
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },

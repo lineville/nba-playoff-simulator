@@ -27,9 +27,14 @@
     "pg": "^7.4.3",
     "pg-hstore": "^2.3.2",
     "react": "^16.4.1",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-tournament-bracket": "^0.2.2",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
     "sequelize": "^4.38.0"
   },
   "devDependencies": {
@@ -38,9 +43,10 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "husky": "^1.0.0-rc.8",
     "nodemon": "^1.17.5",
-    "webpack": "^4.12.2",
+    "webpack": "^4.16.1",
     "webpack-cli": "^3.0.8"
   }
 }

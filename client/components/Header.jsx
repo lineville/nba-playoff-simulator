@@ -11,7 +11,7 @@ const Header = () => {
             className="d-inline-block align-top"
             alt=""
           />
-          2018 NBA Playoffs Simulator
+          <h3>2018 NBA Playoffs Simulator</h3>
         </a>
       </nav>
     </div>
