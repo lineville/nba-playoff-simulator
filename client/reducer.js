@@ -28,6 +28,7 @@ export const fetchTeams = () => {
 const initState = {
   teams: [],
   round: 1,
+  userData: {},
 }
 
 const reducer = (state = initState, action) => {
