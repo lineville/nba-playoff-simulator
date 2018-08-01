@@ -4,11 +4,7 @@ const Team = props => {
   const team = props.team
   if (team) {
     return (
-      <li
-        style={{ color: team.color }}
-        key={props.idx}
-        className="list-group-item"
-      >
+      <li style={{ color: team.color }} className="game game-top winner">
         {team.seed}. {team.name} <img src={team.logoURL} />
       </li>
     )

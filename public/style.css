@@ -12,50 +12,77 @@ img {
   height: 42px;
 }
 
-ul {
-  list-style-type: none;
-}
-
-ul .east {
-  text-align: right;
-}
-
-ul .west {
-  text-align: left;
-}
-
-.series {
-  padding: 0px;
-}
-
-.top-team {
-  border-top: 2px solid #090;
-  border-right: 2px solid #090;
-  width: 80%;
-  height: 25%;
-  float: left;
-  position: absolute;
-  top: 25%;
-}
-
-.bottom-team {
-  border-bottom: 2px solid #f00;
-  border-right: 2px solid #f00;
-  width: 80%;
-  height: 25%;
-  float: left;
-  position: absolute;
-  top: 50%;
-}
-
 .winner {
-  border-top: 2px solid #090;
-  width: 20%;
-  margin-left: 80%;
-  float: right;
-  position: absolute;
+  border-bottom: 2px solid #090;
+  border-right: 1px solid #fff;
+}
+
+.looser {
+  border-top: 2px solid red;
 }
 
 span {
   display: inline;
+}
+
+/* STYLES TAKEN FROM https://codepen.io/aronduby/pen/qliuj */
+/*
+ *  Flex Layout Specifics
+*/
+main {
+  display: flex;
+  flex-direction: row;
+}
+.round {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  list-style: none;
+  padding: 0;
+}
+.round .spacer {
+  flex-grow: 1;
+}
+.round .spacer:first-child,
+.round .spacer:last-child {
+  flex-grow: 0.5;
+}
+
+.round .game-spacer {
+  flex-grow: 1;
+}
+/*
+ *  General Styles
+*/
+body {
+  font-family: sans-serif;
+  font-size: small;
+  padding: 10px;
+  line-height: 1.4em;
+}
+
+li.game {
+  padding-left: 20px;
+}
+
+li.game.winner {
+  font-weight: bold;
+}
+li.game span {
+  float: right;
+  margin-right: 5px;
+}
+
+li.game-spacer {
+  border-right: 1px solid #aaa;
+  min-height: 40px;
+}
+
+li.game-bottom {
+  border-right: 1px solid #aaa;
+}
+
+li.game-top {
+  border-right: 1px solid #aaa;
 }
