@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Slider, InputNumber, Row, Col } from 'antd'
+import { Slider, InputNumber, Row, Col, Label } from 'antd'
 
 class Sliders extends Component {
   state = {
@@ -14,8 +14,8 @@ class Sliders extends Component {
 
   render() {
     return (
-      <Row className="slider-row">
-        <Col span={4}>
+      <div>
+        <Row className="slider-row">
           <Slider
             min={0}
             max={100}
@@ -23,18 +23,60 @@ class Sliders extends Component {
             onChange={this.onChange}
             value={this.state.inputValue}
           />
-        </Col>
-        <Col span={4}>
-          <InputNumber
+        </Row>
+        <Label htmlFor="slider">Playoff Experience</Label>
+        <Row className="slider-row">
+          <Slider
             min={0}
             max={100}
-            style={{ marginLeft: 16 }}
-            value={this.state.inputValue}
+            id="slider"
             onChange={this.onChange}
+            value={this.state.inputValue}
           />
-        </Col>
-        <label htmlFor="slider">Playoff Experience</label>
-      </Row>
+        </Row>
+        <Label htmlFor="slider">Playoff Experience</Label>
+        <Row className="slider-row">
+          <Slider
+            min={0}
+            max={100}
+            id="slider"
+            onChange={this.onChange}
+            value={this.state.inputValue}
+          />
+        </Row>
+
+        <Label htmlFor="slider">Playoff Experience</Label>
+        <Row className="slider-row">
+          <Slider
+            min={0}
+            max={100}
+            id="slider"
+            onChange={this.onChange}
+            value={this.state.inputValue}
+          />
+        </Row>
+        <Label htmlFor="slider">Playoff Experience</Label>
+        <Row className="slider-row">
+          <Slider
+            min={0}
+            max={100}
+            id="slider"
+            onChange={this.onChange}
+            value={this.state.inputValue}
+          />
+        </Row>
+        <Label htmlFor="slider">Playoff Experience</Label>
+        <Row className="slider-row">
+          <Slider
+            min={0}
+            max={100}
+            id="slider"
+            onChange={this.onChange}
+            value={this.state.inputValue}
+          />
+        </Row>
+        <Label htmlFor="slider">Playoff Experience</Label>
+      </div>
     )
   }
 }

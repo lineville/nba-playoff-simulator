@@ -13,17 +13,17 @@ const SecondRound = props => {
       </li>
       <li className="game game-spacer">&nbsp;</li>
       <li className="game game-bottom">
-        <Team team={teams[3]} />
+        <Team team={teams[6]} />
       </li>
 
       <li className="spacer">&nbsp;</li>
 
       <li className="game game-top">
-        <Team team={teams[4]} />
+        <Team team={teams[5]} />
       </li>
       <li className="game game-spacer">&nbsp;</li>
       <li className="game game-bottom">
-        <Team team={teams[7]} />
+        <Team team={teams[2]} />
       </li>
 
       <li className="spacer">&nbsp;</li>
@@ -33,17 +33,17 @@ const SecondRound = props => {
       </li>
       <li className="game game-spacer">&nbsp;</li>
       <li className="game game-bottom">
-        <Team team={teams[10]} />
+        <Team team={teams[14]} />
       </li>
 
       <li className="spacer">&nbsp;</li>
 
       <li className="game game-top">
-        <Team team={teams[13]} />
+        <Team team={teams[12]} />
       </li>
       <li className="game game-spacer">&nbsp;</li>
       <li className="game game-bottom">
-        <Team team={teams[15]} />
+        <Team team={teams[10]} />
       </li>
       <li className="spacer">&nbsp;</li>
     </ul>
