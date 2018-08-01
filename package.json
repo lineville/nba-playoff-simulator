@@ -4,7 +4,7 @@
   "description": "Dynamic, interactive and predictive application for the NBA Playoffs.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack -w & nodemon --watch server -e js,html server/main.js",
+    "start-dev": "webpack -w & nodemon --watch server -e js,html server/main.js",
     "seed": "node ./bin/seed",
     "test": "npm test"
   },
