@@ -4,8 +4,11 @@ const Team = props => {
   const team = props.team
   if (team) {
     return (
-      <li style={{ color: team.color }} className="game game-top winner">
-        {team.seed}. {team.name} <img src={team.logoURL} />
+      <li style={{ color: team.color }}>
+        {team.seed}. {team.name}{' '}
+        <span>
+          <img src={team.logoURL} />
+        </span>
       </li>
     )
   } else {

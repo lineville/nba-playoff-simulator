@@ -22,9 +22,9 @@ class Bracket extends Component {
         {/* <Round /> */}
         <main id="tournament">
           <FirstRound teams={this.props.teams} />
-          <SecondRound />
-          <ThirdRound />
-          <FourthRound />
+          <SecondRound teams={this.props.teams} />
+          <ThirdRound teams={this.props.teams} />
+          <FourthRound teams={this.props.teams} />
         </main>
       </div>
     )

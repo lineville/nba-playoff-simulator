@@ -1,49 +1,60 @@
 import React, { Component } from 'react'
+import Team from './Team'
+import Matchup from './Matchup'
 
-const SecondRound = () => (
-  <ul className="round round-2">
-    <li className="spacer">&nbsp;</li>
+const SecondRound = props => {
+  const teams = props.teams
+  return (
+    <ul className="round round-2">
+      <li className="spacer">&nbsp;</li>
 
-    <li className="game game-top winner">
-      Lousville <span>82</span>
-    </li>
-    <li className="game game-spacer">&nbsp;</li>
-    <li className="game game-bottom looser ">
-      Colo St <span>56</span>
-    </li>
+      <li className="game game-top">
+        <Team team={teams[0]} />
+      </li>
+      <li className="game game-spacer">&nbsp;</li>
+      <li className="game game-bottom">
+        <Team team={teams[3]} />
+      </li>
 
-    <li className="spacer">&nbsp;</li>
+      <li className="spacer">&nbsp;</li>
 
-    <li className="game game-top winner">
-      Oregon <span>74</span>
-    </li>
-    <li className="game game-spacer">&nbsp;</li>
-    <li className="game game-bottom looser">
-      Saint Louis <span>57</span>
-    </li>
+      <li className="game game-top">
+        <Team team={teams[4]} />
+      </li>
+      <li className="game game-spacer">&nbsp;</li>
+      <li className="game game-bottom">
+        <Team team={teams[7]} />
+      </li>
 
-    <li className="spacer">&nbsp;</li>
+      <li className="spacer">&nbsp;</li>
 
-    <li className="game game-top winner">
-      Memphis <span>48</span>
-    </li>
-    <li className="game game-spacer">&nbsp;</li>
-    <li className="game game-bottom looser">
-      Mich St <span>70</span>
-    </li>
+      <li className="game game-top">
+        <Team team={teams[8]} />
+      </li>
+      <li className="game game-spacer">&nbsp;</li>
+      <li className="game game-bottom">
+        <Team team={teams[10]} />
+      </li>
 
-    <li className="spacer">&nbsp;</li>
+      <li className="spacer">&nbsp;</li>
 
-    <li className="game game-top winner">
-      Creighton <span>50</span>
-    </li>
-    <li className="game game-spacer">&nbsp;</li>
-    <li className="game game-bottom looser">
-      Duke <span>66</span>
-    </li>
-
-    <li className="spacer">&nbsp;</li>
-  </ul>
-)
+      <li className="game game-top">
+        <Team team={teams[13]} />
+      </li>
+      <li className="game game-spacer">&nbsp;</li>
+      <li className="game game-bottom">
+        <Team team={teams[15]} />
+      </li>
+      <li className="spacer">&nbsp;</li>
+    </ul>
+  )
+}
 
 export default SecondRound
+
+{
+  /* <Matchup topTeam={teams[0]} bottomTeam={teams[1]} />
+<Matchup topTeam={teams[2]} bottomTeam={teams[3]} />
+<Matchup topTeam={teams[4]} bottomTeam={teams[5]} />
+<Matchup topTeam={teams[6]} bottomTeam={teams[7]} /> */
+}
