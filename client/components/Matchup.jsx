@@ -4,10 +4,15 @@ import Team from './Team'
 const Matchup = props => {
   return (
     <div>
-      <ul className="list-group">
+      <li className="spacer">&nbsp;</li>
+
+      <li className="game game-top">
         <Team team={props.topTeam} />
+      </li>
+      <li className="game game-spacer">&nbsp;</li>
+      <li className="game game-bottom">
         <Team team={props.bottomTeam} />
-      </ul>
+      </li>
     </div>
   )
 }
