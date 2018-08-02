@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 
 class Sliders extends Component {
   constructor() {
@@ -69,9 +68,5 @@ class Sliders extends Component {
     )
   }
 }
-
-const mapDispatch = dispatch => ({
-  sendUserData: () => dispatch(),
-})
 
 export default Sliders

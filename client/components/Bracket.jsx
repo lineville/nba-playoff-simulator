@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 import Header from './Header'
 import Sliders from './Sliders'
-import { connect } from 'react-redux'
-import { fetchTeams } from '../reducer'
 import FirstRound from './FirstRound'
 import SecondRound from './SecondRound'
 import ThirdRound from './ThirdRound'
@@ -11,8 +10,26 @@ import Winner from './Winner'
 import RunSimulation from './RunSimulation'
 
 class Bracket extends Component {
-  componentDidMount() {
-    this.props.loadTeams()
+  constructor() {
+    super()
+    this.state = {
+      round: 1,
+      allTeams: [],
+      secondRoundTeams: [],
+      thirdRoundTeams: [],
+      fourthFroundTeams: [],
+      champ: {},
+    }
+  }
+
+  async componentDidMount() {
+    try {
+      const { data } = await axios.get(`/api/teams`)
+      this.setState({ allTeams: data })
+    } catch (error) {
+      console.log('Unable to get the teams')
+      console.error(error)
+    }
   }
 
   render() {
@@ -21,11 +38,11 @@ class Bracket extends Component {
         <Header />
         <RunSimulation />
         <main id="tournament">
-          <FirstRound teams={this.props.teams} />
-          <SecondRound teams={this.props.teams} />
-          <ThirdRound teams={this.props.teams} />
-          <FourthRound teams={this.props.teams} />
-          <Winner teams={this.props.teams} />
+          <FirstRound teams={this.state.allTeams} />
+          <SecondRound teams={this.state.secondRoundTeams} />
+          <ThirdRound teams={this.state.thirdRoundTeams} />
+          <FourthRound teams={this.state.fourthFroundTeams} />
+          <Winner teams={this.state.champ} />
           <Sliders />
         </main>
       </div>
@@ -33,15 +50,4 @@ class Bracket extends Component {
   }
 }
 
-const mapState = state => ({
-  teams: state.allTeams,
-})
-
-const mapDispatch = dispatch => ({
-  loadTeams: () => dispatch(fetchTeams()),
-})
-
-export default connect(
-  mapState,
-  mapDispatch
-)(Bracket)
+export default Bracket
