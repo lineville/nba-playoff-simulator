@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/lineville/nba-playoff-simulator#readme",
   "dependencies": {
-    "antd": "^3.7.3",
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "bootstrap": "^4.1.3",

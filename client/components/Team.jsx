@@ -12,7 +12,7 @@ const Team = props => {
       </div>
     )
   } else {
-    return `Loading...`
+    return <div />
   }
 }
 

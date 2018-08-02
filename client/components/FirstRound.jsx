@@ -44,6 +44,9 @@ const FirstRound = props => {
       <li className="game game-bottom">
         <Team team={teams[3]} />
       </li>
+      <li className="spacer">&nbsp;</li>
+      <br />
+      <li className="spacer">&nbsp;</li>
       <li className="game game-top">
         <Team team={teams[8]} />
       </li>

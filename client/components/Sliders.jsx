@@ -1,84 +1,77 @@
 import React, { Component } from 'react'
-import { Slider, InputNumber, Row, Col, Label } from 'antd'
+import { connect } from 'react-redux'
 
 class Sliders extends Component {
-  state = {
-    inputValue: 1,
+  constructor() {
+    super()
+    this.state = {
+      val1: 50,
+      val2: 50,
+      val3: 50,
+      val4: 50,
+      val5: 50,
+    }
   }
-
-  onChange = value => {
-    this.setState({
-      inputValue: value,
-    })
-  }
-
   render() {
     return (
       <div>
-        <Row className="slider-row">
-          <Slider
-            min={0}
-            max={100}
-            id="slider"
-            onChange={this.onChange}
-            value={this.state.inputValue}
+        <div className="slidecontainer">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            className="slider"
+            id="myRange1"
           />
-        </Row>
-        <Label htmlFor="slider">Playoff Experience</Label>
-        <Row className="slider-row">
-          <Slider
-            min={0}
-            max={100}
-            id="slider"
-            onChange={this.onChange}
-            value={this.state.inputValue}
+          <label htmlFor="myRange1">Regular Season Record</label>
+        </div>
+        <div className="slidecontainer">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            className="slider"
+            id="myRange2"
           />
-        </Row>
-        <Label htmlFor="slider">Playoff Experience</Label>
-        <Row className="slider-row">
-          <Slider
-            min={0}
-            max={100}
-            id="slider"
-            onChange={this.onChange}
-            value={this.state.inputValue}
+          <label htmlFor="myRange2">Playoff Experience</label>
+        </div>
+        <div className="slidecontainer">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            className="slider"
+            id="myRange3"
           />
-        </Row>
-
-        <Label htmlFor="slider">Playoff Experience</Label>
-        <Row className="slider-row">
-          <Slider
-            min={0}
-            max={100}
-            id="slider"
-            onChange={this.onChange}
-            value={this.state.inputValue}
+          <label htmlFor="myRange3">All Star Power</label>
+        </div>
+        <div className="slidecontainer">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            className="slider"
+            id="myRange4"
           />
-        </Row>
-        <Label htmlFor="slider">Playoff Experience</Label>
-        <Row className="slider-row">
-          <Slider
-            min={0}
-            max={100}
-            id="slider"
-            onChange={this.onChange}
-            value={this.state.inputValue}
+          <label htmlFor="myRange4">Individual Stats</label>
+        </div>
+        <div className="slidecontainer">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            className="slider"
+            id="myRange5"
           />
-        </Row>
-        <Label htmlFor="slider">Playoff Experience</Label>
-        <Row className="slider-row">
-          <Slider
-            min={0}
-            max={100}
-            id="slider"
-            onChange={this.onChange}
-            value={this.state.inputValue}
-          />
-        </Row>
-        <Label htmlFor="slider">Playoff Experience</Label>
+          <label htmlFor="myRange5">History</label>
+        </div>
       </div>
     )
   }
 }
 
-export default Slider
+const mapDispatch = dispatch => ({
+  sendUserData: () => dispatch(),
+})
+
+export default Sliders

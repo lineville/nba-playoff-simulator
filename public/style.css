@@ -10,6 +10,10 @@ img {
   position: relative;
 }
 
+.center {
+  text-align: center;
+}
+
 #nba-logo {
   width: 19px;
   height: 42px;
@@ -49,7 +53,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 250px;
+  width: 200px;
   list-style: none;
   padding: 0;
 }
