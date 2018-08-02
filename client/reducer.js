@@ -24,7 +24,6 @@ const reducer = (state = initState, action) => {
     case RECEIVED_USER_DATA:
       return action.payload
     case REQUEST_USER_DATA:
-      console.log('hit the case', state)
       return state
     default:
       return state
