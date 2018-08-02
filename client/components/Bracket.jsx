@@ -15,61 +15,63 @@ class Bracket extends Component {
     super()
     this.state = {
       round: 1,
-      allTeams: [],
-      secondRoundTeams: [],
-      thirdRoundTeams: [],
-      fourthFroundTeams: [],
-      champ: {},
+      teams: {
+        1: [],
+        2: [],
+        3: [],
+        4: [],
+        5: [],
+      },
     }
 
-    this.predictTeam = this.predictTeam.bind(this)
-    this.remainingTeams = this.remainingTeams.bind(this)
+    this.nextTeams = this.nextTeams.bind(this)
   }
 
   async componentDidMount() {
     try {
       const { data } = await axios.get(`/api/teams`)
-      this.setState({ allTeams: data })
+      this.setState({ teams: { ...this.state.teams, 1: data } })
     } catch (error) {
       console.log('Unable to get the teams')
       console.error(error)
     }
   }
 
-  remainingTeams() {
-    switch (this.state.round) {
-      case 1:
-        return this.state.allTeams
-      case 2:
-        return this.state.secondRoundTeams
-      case 3:
-        return this.state.thirdRoundTeams
-      case 4:
-        return this.state.fourthFroundTeams
-      default:
-        return this.state.allTeams
+  //gets the remaining teams, pairs the teams up and calculates
+  // the new set of winners
+  async nextTeams() {
+    console.log(this.state.teams)
+    const currentTeams = this.state.teams[this.state.round]
+    let matchups = []
+    let newTeams = []
+    matchups[0] = [currentTeams[0], currentTeams[1]]
+    for (let i = 1; i < currentTeams.length / 2; i++) {
+      matchups[i] = [currentTeams[i * 2 - 1], currentTeams[i * 2]]
     }
+    matchups.forEach(matchup => {
+      newTeams.push(basicPredict(matchup[0], matchup[1]))
+    })
+    await this.setState({
+      round: this.state.round + 1,
+    })
+    console.log(this.state.round)
+    this.setState({
+      teams: { ...this.state.teams, [this.state.round]: newTeams },
+    })
+    console.log(this.state.teams)
   }
-
-  predictTeam(team1, team2) {
-    const currentTeamSet = this.remainingTeams
-
-    return basicPredict(team1, team2)
-  }
-
-  firstRoundWinner() {}
 
   render() {
     return (
       <div>
         <Header />
-        <RunSimulation run={this.predictTeam} />
+        <RunSimulation run={this.nextTeams} />
         <main id="tournament">
-          <FirstRound teams={this.state.allTeams} />
-          <SecondRound teams={this.state.secondRoundTeams} />
-          <ThirdRound teams={this.state.thirdRoundTeams} />
-          <FourthRound teams={this.state.fourthFroundTeams} />
-          <Winner teams={this.state.champ} />
+          <FirstRound teams={this.state.teams[1]} />
+          <SecondRound teams={this.state.teams[2]} />
+          <ThirdRound teams={this.state.teams[3]} />
+          <FourthRound teams={this.state.teams[4]} />
+          <Winner teams={this.state.teams[5]} />
           <Sliders />
         </main>
       </div>

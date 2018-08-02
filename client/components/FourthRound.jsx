@@ -8,11 +8,11 @@ const FourthRound = props => {
       <li className="spacer">&nbsp;</li>
 
       <li className="game game-top">
-        <Team team={teams[2]} />
+        <Team team={teams[0]} />
       </li>
       <li className="game game-spacer">&nbsp;</li>
       <li className="game game-bottom ">
-        <Team team={teams[14]} />
+        <Team team={teams[1]} />
       </li>
 
       <li className="spacer">&nbsp;</li>

@@ -12,17 +12,17 @@ const ThirdRound = props => {
       </li>
       <li className="game game-spacer">&nbsp;</li>
       <li className="game game-bottom ">
-        <Team team={teams[2]} />
+        <Team team={teams[1]} />
       </li>
 
       <li className="spacer">&nbsp;</li>
 
       <li className="game game-top ">
-        <Team team={teams[14]} />
+        <Team team={teams[2]} />
       </li>
       <li className="game game-spacer">&nbsp;</li>
       <li className="game game-bottom">
-        <Team team={teams[10]} />
+        <Team team={teams[3]} />
       </li>
 
       <li className="spacer">&nbsp;</li>
