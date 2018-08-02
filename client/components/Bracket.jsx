@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Header from './Header'
-import Round from './Round'
 import Sliders from './Sliders'
 import { connect } from 'react-redux'
 import { fetchTeams } from '../reducer'
@@ -8,6 +7,8 @@ import FirstRound from './FirstRound'
 import SecondRound from './SecondRound'
 import ThirdRound from './ThirdRound'
 import FourthRound from './FourthRound'
+import Winner from './Winner'
+import RunSimulation from './RunSimulation'
 
 class Bracket extends Component {
   componentDidMount() {
@@ -18,13 +19,14 @@ class Bracket extends Component {
     return (
       <div>
         <Header />
-        <Sliders />
-        {/* <Round /> */}
+        <RunSimulation />
         <main id="tournament">
           <FirstRound teams={this.props.teams} />
           <SecondRound teams={this.props.teams} />
           <ThirdRound teams={this.props.teams} />
           <FourthRound teams={this.props.teams} />
+          <Winner teams={this.props.teams} />
+          <Sliders />
         </main>
       </div>
     )
@@ -32,7 +34,7 @@ class Bracket extends Component {
 }
 
 const mapState = state => ({
-  teams: state.teams,
+  teams: state.allTeams,
 })
 
 const mapDispatch = dispatch => ({

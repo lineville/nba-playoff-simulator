@@ -10,16 +10,30 @@ img {
   position: relative;
 }
 
+.center {
+  text-align: center;
+}
+
 #nba-logo {
   width: 19px;
   height: 42px;
 }
 
-li.game.winner {
-  border-top: 2px solid #090;
+.title {
+  text-align: center;
 }
 
-li.game.looser {
+li.game.winner-top {
+  border-top: 2px solid #090;
+}
+li.game.winner-bottom {
+  border-bottom: 2px solid #090;
+}
+
+li.game.looser-top {
+  border-top: 2px solid red;
+}
+li.game.looser-bottom {
   border-bottom: 2px solid red;
 }
 
@@ -39,7 +53,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 300px;
+  width: 200px;
   list-style: none;
   padding: 0;
 }
@@ -82,11 +96,16 @@ li.game-spacer {
 li.game-bottom {
   border-right: 1px solid #aaa;
   border-bottom: 2px solid #aaa;
-  padding-top: 15px;
+  /* padding-top: 15px; */
 }
 
 li.game-top {
   border-right: 1px solid #aaa;
   border-top: 2px solid #aaa;
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
+}
+
+li.game-champion {
+  border-bottom: 2px solid #aaa;
+  padding-top: 15px;
 }

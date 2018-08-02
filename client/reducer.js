@@ -26,7 +26,7 @@ export const fetchTeams = () => {
 }
 
 const initState = {
-  teams: [],
+  allTeams: [],
   round: 1,
   userData: {},
 }
@@ -36,12 +36,12 @@ const reducer = (state = initState, action) => {
     case GET_TEAMS:
       return {
         ...state,
-        teams: action.payload,
+        allTeams: action.payload,
       }
     case NEXT_ROUND:
       return {
         round: state.round + 1,
-        teams: action.payload,
+        allTeams: action.payload,
       }
     default:
       return state

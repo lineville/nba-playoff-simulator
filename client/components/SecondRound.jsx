@@ -51,10 +51,3 @@ const SecondRound = props => {
 }
 
 export default SecondRound
-
-{
-  /* <Matchup topTeam={teams[0]} bottomTeam={teams[1]} />
-<Matchup topTeam={teams[2]} bottomTeam={teams[3]} />
-<Matchup topTeam={teams[4]} bottomTeam={teams[5]} />
-<Matchup topTeam={teams[6]} bottomTeam={teams[7]} /> */
-}
