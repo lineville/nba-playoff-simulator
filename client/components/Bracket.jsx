@@ -10,6 +10,7 @@ import FourthRound from './FourthRound'
 import Winner from './Winner'
 import RunSimulation from './RunSimulation'
 import { basicPredict } from '../predictWinner'
+import { getUserData } from '../reducer'
 
 class Bracket extends Component {
   constructor() {
@@ -23,23 +24,17 @@ class Bracket extends Component {
         4: [],
         5: [],
       },
-      userData: {
-        regSeason: 50,
-        points: 50,
-        assists: 50,
-        rebounds: 50,
-        allstar: 50,
-        history: 50,
-      },
     }
 
     this.nextTeams = this.nextTeams.bind(this)
   }
 
   async componentDidMount() {
+    this.props.loadUserData()
     try {
       const { data } = await axios.get(`/api/teams`)
       this.setState({ teams: { ...this.state.teams, 1: data } })
+      console.log('props', this.props)
     } catch (error) {
       console.log('Unable to get the teams')
       console.error(error)
@@ -74,14 +69,14 @@ class Bracket extends Component {
     return (
       <div>
         <Header />
-        <RunSimulation />
+        <RunSimulation run={this.nextTeams} />
         <main id="tournament">
           <FirstRound teams={this.state.teams[1]} />
           <SecondRound teams={this.state.teams[2]} />
           <ThirdRound teams={this.state.teams[3]} />
           <FourthRound teams={this.state.teams[4]} />
           <Winner teams={this.state.teams[5]} />
-          <Sliders nextTeams={this.nextTeams} />
+          <Sliders />
         </main>
       </div>
     )
@@ -92,4 +87,11 @@ const mapState = state => ({
   userData: state.userData,
 })
 
-export default connect(mapState)(Bracket)
+const mapDispatch = dispatch => ({
+  loadUserData: () => dispatch(getUserData()),
+})
+
+export default connect(
+  mapState,
+  mapDispatch
+)(Bracket)

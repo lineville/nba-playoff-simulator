@@ -1,15 +1,33 @@
 const RECEIVED_USER_DATA = 'RECEIVED_USER_DATA'
+const REQUEST_USER_DATA = 'REQUEST_USER_DATA'
 
-export const fetchUserData = payload => ({
+export const sendUserData = payload => ({
   type: RECEIVED_USER_DATA,
   payload,
 })
 
-const reducer = (state = {}, action) => {
-  if (action.type === RECEIVED_USER_DATA) {
-    return action.payload
-  } else {
-    return state
+export const getUserData = () => ({
+  type: REQUEST_USER_DATA,
+})
+
+const initState = {
+  regSeason: 50,
+  points: 50,
+  assists: 50,
+  rebounds: 50,
+  allstar: 50,
+  history: 50,
+}
+
+const reducer = (state = initState, action) => {
+  switch (action.type) {
+    case RECEIVED_USER_DATA:
+      return action.payload
+    case REQUEST_USER_DATA:
+      console.log('hit the case', state)
+      return state
+    default:
+      return state
   }
 }
 

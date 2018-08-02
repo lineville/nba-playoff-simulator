@@ -67,7 +67,7 @@ const teams = [
     city: 'San Antonio',
     conference: 'west',
     seed: 7,
-    color: '#C4CED4',
+    color: '#000000',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/03/san_antonio_spurs_logo.jpg',
   },

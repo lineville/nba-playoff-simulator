@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { fetchUserData } from '../reducer'
+import { sendUserData } from '../reducer'
 import { connect } from 'react-redux'
 
 class Sliders extends Component {
@@ -105,7 +105,7 @@ class Sliders extends Component {
         </div>
         <button
           className="btn btn-outline-success center"
-          onClick={() => this.props.sendUserData(this.state)}
+          onClick={() => this.props.postUserData(this.state)}
         >
           Save Settings
         </button>
@@ -115,7 +115,7 @@ class Sliders extends Component {
 }
 
 const mapDispatch = dispatch => ({
-  sendUserData: data => dispatch(fetchUserData(data)),
+  postUserData: data => dispatch(sendUserData(data)),
 })
 
 export default connect(
