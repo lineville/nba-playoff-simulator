@@ -18,6 +18,10 @@ const Team = db.define('team', {
     type: Sequelize.INTEGER,
     allowNull: false,
   },
+  winPCT: {
+    type: Sequelize.DOUBLE,
+    allowNull: false,
+  },
   color: {
     type: Sequelize.STRING,
     allowNull: false,

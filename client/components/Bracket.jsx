@@ -27,6 +27,7 @@ class Bracket extends Component {
     }
 
     this.nextTeams = this.nextTeams.bind(this)
+    this.reset = this.reset.bind(this)
   }
 
   async componentDidMount() {
@@ -65,11 +66,27 @@ class Bracket extends Component {
     })
   }
 
+  reset() {
+    this.setState({
+      round: 1,
+      teams: {
+        1: this.state.teams[1],
+        2: [],
+        3: [],
+        4: [],
+        5: [],
+      },
+    })
+  }
+
   render() {
     return (
       <div>
         <Header />
         <RunSimulation run={this.nextTeams} />
+        <button className="btn btn-outline-warning center" onClick={this.reset}>
+          Reset
+        </button>
         <main id="tournament">
           <FirstRound teams={this.state.teams[1]} />
           <SecondRound teams={this.state.teams[2]} />

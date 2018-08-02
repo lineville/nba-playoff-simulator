@@ -57,15 +57,18 @@ const sumOfVals = vals => {
 }
 
 const weightedValues = async (topTeam, bottomTeam, userData) => {
+  const scaledData = {}
+  Object.keys(userData).forEach(stat => {
+    scaledData[stat] = userData[stat] / 100
+  })
+  console.log('scaled', scaledData)
   const vals = await averageStats(topTeam, bottomTeam)
-  console.log(vals)
   Object.keys(vals.top).forEach(stat => {
-    vals.top[stat] *= userData[stat]
+    vals.top[stat] *= scaledData[stat]
   })
   Object.keys(vals.bottom).forEach(stat => {
-    vals.bottom[stat] *= userData[stat]
+    vals.bottom[stat] *= scaledData[stat]
   })
-  console.log('weighted vals', vals)
   return vals
 }
 

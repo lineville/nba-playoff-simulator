@@ -4,6 +4,7 @@ const teams = [
     city: 'Houston',
     conference: 'west',
     seed: 1,
+    winPCT: 0.793,
     color: '#CE1141',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/houston_rockets_logo.jpg',
@@ -13,6 +14,7 @@ const teams = [
     city: 'Minnesota',
     conference: 'west',
     seed: 8,
+    winPCT: 0.573,
     color: '#0C2340',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/minnesota_timberwolves_logo.jpg',
@@ -22,6 +24,7 @@ const teams = [
     city: 'Utah',
     conference: 'west',
     seed: 4,
+    winPCT: 0.585,
     color: '#002B5C',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/03/utah_jazz_logo.jpg',
@@ -31,6 +34,7 @@ const teams = [
     city: 'Oklahoma City',
     conference: 'west',
     seed: 5,
+    winPCT: 0.585,
     color: '#007AC1',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/oklahoma_city_thunder_logo.jpg',
@@ -40,6 +44,7 @@ const teams = [
     city: 'Portland',
     conference: 'west',
     seed: 3,
+    winPCT: 0.598,
     color: '#E03A3E',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/03/trailblazers_logo_colors.jpg',
@@ -49,6 +54,7 @@ const teams = [
     city: 'New Orleans',
     conference: 'west',
     seed: 6,
+    winPCT: 0.585,
     color: '#0C2340',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/06/new_orleans_pelicans_logo.jpg',
@@ -58,6 +64,7 @@ const teams = [
     city: 'Golden State',
     conference: 'west',
     seed: 2,
+    winPCT: 0.707,
     color: '#006BB6',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/warriors_logo_colors.png',
@@ -67,6 +74,7 @@ const teams = [
     city: 'San Antonio',
     conference: 'west',
     seed: 7,
+    winPCT: 0.573,
     color: '#000000',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/03/san_antonio_spurs_logo.jpg',
@@ -76,6 +84,7 @@ const teams = [
     city: 'Toronto',
     conference: 'east',
     seed: 1,
+    winPCT: 0.72,
     color: '#CE1141',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/03/toronto_raptors_logo.jpg',
@@ -85,6 +94,7 @@ const teams = [
     city: 'Washington',
     conference: 'east',
     seed: 8,
+    winPCT: 0.524,
     color: '#002B5C',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/03/washington_wizards_logo.jpg',
@@ -94,6 +104,7 @@ const teams = [
     city: 'Cleveland',
     conference: 'east',
     seed: 4,
+    winPCT: 0.61,
     color: '#6F263D',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/02/2017_cavaliers_logo.png',
@@ -103,6 +114,7 @@ const teams = [
     city: 'Indiana',
     conference: 'east',
     seed: 5,
+    winPCT: 0.585,
     color: '#FDBB30',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/indiana_pacers_logo.jpg',
@@ -112,6 +124,7 @@ const teams = [
     city: 'Philadelphia',
     conference: 'east',
     seed: 3,
+    winPCT: 0.634,
     color: '#006BB6',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/sixers_logo_colors-768x768.png',
@@ -121,6 +134,7 @@ const teams = [
     city: 'Miami',
     conference: 'east',
     seed: 6,
+    winPCT: 0.537,
     color: '#98002E',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/miami_heat_logo_colors.png',
@@ -130,6 +144,7 @@ const teams = [
     city: 'Boston',
     conference: 'east',
     seed: 2,
+    winPCT: 0.671,
     color: '#007A33',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/02/boston_celtics_logo.jpg',
@@ -139,6 +154,7 @@ const teams = [
     city: 'Milwaukee',
     conference: 'east',
     seed: 7,
+    winPCT: 0.537,
     color: '#00471B',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/milwaukee_bucks_logo.jpg',
