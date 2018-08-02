@@ -11,6 +11,9 @@ const seed = async () => {
   //Close the db and log successful seed
   db.close()
   console.log(`
+  ~~~~~~~~~~~~~~~~~~
+  created ${teams.length} teams
+  created ${allPlayers.length} players
   |~~~~~~~~~~~~~~~~|
   |                |
   |Seed successful!|

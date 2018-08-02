@@ -25,21 +25,25 @@ const averageStats = async (topTeam, bottomTeam) => {
   const topPointsAvg = teamAvg(topPlayers, 'pointsPerGame')
   const topAssistsAvg = teamAvg(topPlayers, 'assistsPerGame')
   const topReboundsAvg = teamAvg(topPlayers, 'reboundsPerGame')
+  const topPlayerEfficiency = teamAvg(topPlayers, 'playerEfficiency')
 
   const bottomPointsAvg = teamAvg(bottomPlayers, 'pointsPerGame')
   const bottomAssistsAvg = teamAvg(bottomPlayers, 'assistsPerGame')
   const bottomReboundsAvg = teamAvg(bottomPlayers, 'reboundsPerGame')
+  const bottomPlayerEfficiency = teamAvg(bottomPlayers, 'playerEfficiency')
 
   return {
     top: {
       points: topPointsAvg,
       assists: topAssistsAvg,
       rebounds: topReboundsAvg,
+      playerEfficiency: topPlayerEfficiency,
     },
     bottom: {
       points: bottomPointsAvg,
       assists: bottomAssistsAvg,
       rebounds: bottomReboundsAvg,
+      playerEfficiency: bottomPlayerEfficiency,
     },
   }
 }
@@ -57,23 +61,28 @@ const sumOfVals = vals => {
 }
 
 const weightedValues = async (topTeam, bottomTeam, userData) => {
+  //convert user data from 1-100 to 0 - 1
   const scaledData = {}
   Object.keys(userData).forEach(stat => {
     scaledData[stat] = userData[stat] / 100
   })
-  console.log('scaled', scaledData)
+  // get averages for pts, assts, rebs for both teams
   const vals = await averageStats(topTeam, bottomTeam)
+  //scale the values by userInput
   Object.keys(vals.top).forEach(stat => {
     vals.top[stat] *= scaledData[stat]
   })
   Object.keys(vals.bottom).forEach(stat => {
     vals.bottom[stat] *= scaledData[stat]
   })
+  vals.top.seed = (9 - topTeam.seed) * scaledData.seed
+  vals.bottom.seed = (9 - bottomTeam.seed) * scaledData.seed
   return vals
 }
 
 export const winner = async (topTeam, bottomTeam, userData) => {
   const values = await weightedValues(topTeam, bottomTeam, userData)
   const compVals = sumOfVals(values)
+  console.log(compVals)
   return compVals[0] > compVals[1] ? topTeam : bottomTeam
 }
