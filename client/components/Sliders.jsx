@@ -1,16 +1,27 @@
 import React, { Component } from 'react'
+import { fetchUserData } from '../reducer'
+import { connect } from 'react-redux'
 
 class Sliders extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
-      val1: 50,
-      val2: 50,
-      val3: 50,
-      val4: 50,
-      val5: 50,
+      regSeason: 50,
+      points: 50,
+      assists: 50,
+      rebounds: 50,
+      allstar: 50,
+      history: 50,
     }
+    this.handleChange = this.handleChange.bind(this)
   }
+
+  handleChange(ev) {
+    this.setState({
+      [ev.target.id]: Number(ev.target.value),
+    })
+  }
+
   render() {
     return (
       <div>
@@ -20,9 +31,12 @@ class Sliders extends Component {
             min="1"
             max="100"
             className="slider"
-            id="myRange1"
+            name="regSeason"
+            id="regSeason"
+            value={this.state.regSeason}
+            onChange={this.handleChange}
           />
-          <label htmlFor="myRange1">Regular Season Record</label>
+          <label htmlFor="regSeason">Regular Season Record</label>
         </div>
         <div className="slidecontainer">
           <input
@@ -30,9 +44,12 @@ class Sliders extends Component {
             min="1"
             max="100"
             className="slider"
-            id="myRange2"
+            name="points"
+            id="points"
+            value={this.state.points}
+            onChange={this.handleChange}
           />
-          <label htmlFor="myRange2">Playoff Experience</label>
+          <label htmlFor="points">Points</label>
         </div>
         <div className="slidecontainer">
           <input
@@ -40,9 +57,12 @@ class Sliders extends Component {
             min="1"
             max="100"
             className="slider"
-            id="myRange3"
+            name="assists"
+            id="assists"
+            value={this.state.assists}
+            onChange={this.handleChange}
           />
-          <label htmlFor="myRange3">All Star Power</label>
+          <label htmlFor="assists">Assists</label>
         </div>
         <div className="slidecontainer">
           <input
@@ -50,9 +70,12 @@ class Sliders extends Component {
             min="1"
             max="100"
             className="slider"
-            id="myRange4"
+            name="rebounds"
+            id="rebounds"
+            value={this.state.rebounds}
+            onChange={this.handleChange}
           />
-          <label htmlFor="myRange4">Individual Stats</label>
+          <label htmlFor="rebounds">Rebounds</label>
         </div>
         <div className="slidecontainer">
           <input
@@ -60,13 +83,42 @@ class Sliders extends Component {
             min="1"
             max="100"
             className="slider"
-            id="myRange5"
+            name="allstar"
+            id="allstar"
+            value={this.state.allstar}
+            onChange={this.handleChange}
           />
-          <label htmlFor="myRange5">History</label>
+          <label htmlFor="allstar">All Star Power</label>
         </div>
+        <div className="slidecontainer">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            className="slider"
+            name="history"
+            id="history"
+            value={this.state.history}
+            onChange={this.handleChange}
+          />
+          <label htmlFor="history">Historical PLayoff Success</label>
+        </div>
+        <button
+          className="btn btn-outline-success center"
+          onClick={() => this.props.sendUserData(this.state)}
+        >
+          Save Settings
+        </button>
       </div>
     )
   }
 }
 
-export default Sliders
+const mapDispatch = dispatch => ({
+  sendUserData: data => dispatch(fetchUserData(data)),
+})
+
+export default connect(
+  null,
+  mapDispatch
+)(Sliders)

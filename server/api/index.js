@@ -12,7 +12,7 @@ router.get('/teams', async (req, res, next) => {
 
 router.get('/teams/:teamId', async (req, res, next) => {
   try {
-    const team = await Team.findById(req.params.teamId)
+    const team = await Team.findById(req.params.teamId, { include: Player })
     res.json(team)
   } catch (error) {
     next(error)
