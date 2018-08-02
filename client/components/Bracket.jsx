@@ -8,6 +8,7 @@ import ThirdRound from './ThirdRound'
 import FourthRound from './FourthRound'
 import Winner from './Winner'
 import RunSimulation from './RunSimulation'
+import { basicPredict } from '../processors/predictWinner'
 
 class Bracket extends Component {
   constructor() {
@@ -20,6 +21,9 @@ class Bracket extends Component {
       fourthFroundTeams: [],
       champ: {},
     }
+
+    this.predictTeam = this.predictTeam.bind(this)
+    this.remainingTeams = this.remainingTeams.bind(this)
   }
 
   async componentDidMount() {
@@ -32,11 +36,34 @@ class Bracket extends Component {
     }
   }
 
+  remainingTeams() {
+    switch (this.state.round) {
+      case 1:
+        return this.state.allTeams
+      case 2:
+        return this.state.secondRoundTeams
+      case 3:
+        return this.state.thirdRoundTeams
+      case 4:
+        return this.state.fourthFroundTeams
+      default:
+        return this.state.allTeams
+    }
+  }
+
+  predictTeam(team1, team2) {
+    const currentTeamSet = this.remainingTeams
+
+    return basicPredict(team1, team2)
+  }
+
+  firstRoundWinner() {}
+
   render() {
     return (
       <div>
         <Header />
-        <RunSimulation />
+        <RunSimulation run={this.predictTeam} />
         <main id="tournament">
           <FirstRound teams={this.state.allTeams} />
           <SecondRound teams={this.state.secondRoundTeams} />

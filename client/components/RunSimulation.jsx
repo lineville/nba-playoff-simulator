@@ -1,8 +1,10 @@
 import React from 'react'
 
-const RunSimulation = () => {
+const RunSimulation = ({ run }) => {
   return (
-    <button className="btn btn-outline-primary center">Run Simulation</button>
+    <button className="btn btn-outline-primary center" onClick={run}>
+      Run Simulation
+    </button>
   )
 }
 

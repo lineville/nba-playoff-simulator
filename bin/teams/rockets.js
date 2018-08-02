@@ -7,6 +7,7 @@ const rocketsPlayers = [
     playerEfficiency: 19.4,
     allStarGames: 9,
     mvps: 1,
+    teamId: 1,
   },
   {
     name: 'Chris Paul',

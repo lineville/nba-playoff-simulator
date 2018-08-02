@@ -7,7 +7,7 @@ const cavaliersPlayers = [
     playerEfficiency: 19.1,
     allStarGames: 14,
     mvps: 7,
-    teamId: 15,
+    teamId: 11,
   },
   {
     name: 'Kevin Love',
@@ -17,7 +17,7 @@ const cavaliersPlayers = [
     playerEfficiency: 15.0,
     allStarGames: 5,
     mvps: 0,
-    teamId: 15,
+    teamId: 11,
   },
   {
     name: 'JR Smith',
@@ -27,7 +27,7 @@ const cavaliersPlayers = [
     playerEfficiency: 5.2,
     allStarGames: 0,
     mvps: 0,
-    teamId: 15,
+    teamId: 11,
   },
   {
     name: 'Kyle Korver',
@@ -37,7 +37,7 @@ const cavaliersPlayers = [
     playerEfficiency: 8.3,
     allStarGames: 1,
     mvps: 0,
-    teamId: 15,
+    teamId: 11,
   },
   {
     name: 'George Hill',
@@ -47,7 +47,7 @@ const cavaliersPlayers = [
     playerEfficiency: 7.9,
     allStarGames: 0,
     mvps: 0,
-    teamId: 15,
+    teamId: 11,
   },
   {
     name: 'Jeff Green',
@@ -57,7 +57,7 @@ const cavaliersPlayers = [
     playerEfficiency: 9.0,
     allStarGames: 0,
     mvps: 0,
-    teamId: 15,
+    teamId: 11,
   },
   {
     name: 'Tristan Thompson',
@@ -67,7 +67,7 @@ const cavaliersPlayers = [
     playerEfficiency: 8.5,
     allStarGames: 0,
     mvps: 0,
-    teamId: 15,
+    teamId: 11,
   },
 ]
 

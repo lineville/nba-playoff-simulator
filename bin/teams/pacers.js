@@ -7,7 +7,7 @@ const pacersPlayers = [
     playerEfficiency: 14.8,
     allStarGames: 1,
     mvps: 0,
-    teamId: 16,
+    teamId: 12,
   },
   {
     name: 'Bojan Bogdanovic',
@@ -17,7 +17,7 @@ const pacersPlayers = [
     playerEfficiency: 9.1,
     allStarGames: 0,
     mvps: 0,
-    teamId: 16,
+    teamId: 12,
   },
   {
     name: 'Domantas Sabonis',
@@ -27,7 +27,7 @@ const pacersPlayers = [
     playerEfficiency: 12.1,
     allStarGames: 0,
     mvps: 0,
-    teamId: 16,
+    teamId: 12,
   },
   {
     name: 'Myles Turner',
@@ -37,7 +37,7 @@ const pacersPlayers = [
     playerEfficiency: 10.0,
     allStarGames: 0,
     mvps: 0,
-    teamId: 16,
+    teamId: 12,
   },
   {
     name: 'Darren Collison',
@@ -47,7 +47,7 @@ const pacersPlayers = [
     playerEfficiency: 11.4,
     allStarGames: 0,
     mvps: 0,
-    teamId: 16,
+    teamId: 12,
   },
   {
     name: 'Thaddeus Young',
@@ -57,7 +57,7 @@ const pacersPlayers = [
     playerEfficiency: 9.0,
     allStarGames: 0,
     mvps: 0,
-    teamId: 16,
+    teamId: 12,
   },
   {
     name: 'Lance Stephenson',
@@ -67,7 +67,7 @@ const pacersPlayers = [
     playerEfficiency: 9.7,
     allStarGames: 0,
     mvps: 0,
-    teamId: 16,
+    teamId: 12,
   },
   {
     name: 'Corey Joseph',
@@ -77,7 +77,7 @@ const pacersPlayers = [
     playerEfficiency: 7.8,
     allStarGames: 0,
     mvps: 0,
-    teamId: 16,
+    teamId: 12,
   },
 ]
 

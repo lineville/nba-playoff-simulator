@@ -7,7 +7,7 @@ const thunderPlayers = [
     playerEfficiency: 18.6,
     allStarGames: 7,
     mvps: 1,
-    teamId: 8,
+    teamId: 4,
   },
   {
     name: 'Paul George',
@@ -17,7 +17,7 @@ const thunderPlayers = [
     playerEfficiency: 12.0,
     allStarGames: 5,
     mvps: 0,
-    teamId: 8,
+    teamId: 4,
   },
   {
     name: 'Carmelo Anthony',
@@ -27,7 +27,7 @@ const thunderPlayers = [
     playerEfficiency: 8.6,
     allStarGames: 10,
     mvps: 0,
-    teamId: 8,
+    teamId: 4,
   },
   {
     name: 'Steven Adams',
@@ -37,7 +37,7 @@ const thunderPlayers = [
     playerEfficiency: 10.9,
     allStarGames: 0,
     mvps: 0,
-    teamId: 8,
+    teamId: 4,
   },
   {
     name: 'Jerami Grant',
@@ -47,7 +47,7 @@ const thunderPlayers = [
     playerEfficiency: 10.1,
     allStarGames: 0,
     mvps: 0,
-    teamId: 8,
+    teamId: 4,
   },
   {
     name: 'Corey Brewer',
@@ -57,7 +57,7 @@ const thunderPlayers = [
     playerEfficiency: 5.9,
     allStarGames: 0,
     mvps: 0,
-    teamId: 8,
+    teamId: 4,
   },
 ]
 

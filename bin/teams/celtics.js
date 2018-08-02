@@ -7,7 +7,7 @@ const celticsPlayers = [
     playerEfficiency: 10.8,
     allStarGames: 0,
     mvps: 0,
-    teamId: 11,
+    teamId: 15,
   },
   {
     name: 'Jaylen Brown',
@@ -17,7 +17,7 @@ const celticsPlayers = [
     playerEfficiency: 8.9,
     allStarGames: 0,
     mvps: 0,
-    teamId: 11,
+    teamId: 15,
   },
   {
     name: 'Terry Rozier',
@@ -27,7 +27,7 @@ const celticsPlayers = [
     playerEfficiency: 11.7,
     allStarGames: 0,
     mvps: 0,
-    teamId: 11,
+    teamId: 15,
   },
   {
     name: 'Al Horford',
@@ -37,7 +37,7 @@ const celticsPlayers = [
     playerEfficiency: 13.4,
     allStarGames: 5,
     mvps: 0,
-    teamId: 11,
+    teamId: 15,
   },
   {
     name: 'Marcus Morris',
@@ -47,7 +47,7 @@ const celticsPlayers = [
     playerEfficiency: 10.6,
     allStarGames: 0,
     mvps: 0,
-    teamId: 11,
+    teamId: 15,
   },
   {
     name: 'Aron Baynes',
@@ -57,7 +57,7 @@ const celticsPlayers = [
     playerEfficiency: 8.7,
     allStarGames: 0,
     mvps: 0,
-    teamId: 11,
+    teamId: 15,
   },
 ]
 
