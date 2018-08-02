@@ -12,6 +12,8 @@ class Sliders extends Component {
       rebounds: 50,
       allstar: 50,
       history: 50,
+      seed: 50,
+      playerEfficiency: 50,
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSave = this.handleSave.bind(this)
@@ -34,8 +36,10 @@ class Sliders extends Component {
       points: 50,
       assists: 50,
       rebounds: 50,
+      seed: 50,
       allstar: 50,
       history: 50,
+      playerEfficiency: 50,
     })
     this.handleSave()
   }
@@ -92,6 +96,32 @@ class Sliders extends Component {
             name="rebounds"
             id="rebounds"
             value={this.state.rebounds}
+            onChange={this.handleChange}
+          />
+        </div>
+        <label htmlFor="playerEfficiency">Player Efficiency</label>
+        <div className="slidecontainer">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            className="slider"
+            name="playerEfficiency"
+            id="playerEfficiency"
+            value={this.state.playerEfficiency}
+            onChange={this.handleChange}
+          />
+        </div>
+        <label htmlFor="seed">Seed</label>
+        <div className="slidecontainer">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            className="slider"
+            name="seed"
+            id="seed"
+            value={this.state.seed}
             onChange={this.handleChange}
           />
         </div>

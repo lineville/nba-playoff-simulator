@@ -57,7 +57,6 @@ class Bracket extends Component {
       newTeams.push(winningTeam)
     })
     newTeams = await Promise.all(newTeams)
-    console.log(newTeams)
     await this.setState({
       round: this.state.round + 1,
     })
