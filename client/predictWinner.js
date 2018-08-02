@@ -5,6 +5,7 @@ const fetchPlayers = async team => {
     const { data } = await axios.get(`/api/teams/${team.id}`)
     return data.players
   } catch (error) {
+    console.log('Could not fetch players for', team.name)
     console.error(error)
   }
 }
@@ -17,7 +18,7 @@ const teamAvg = (players, statCol) => {
   return total / players.length
 }
 
-export const basicPredict = async (topTeam, bottomTeam) => {
+const sumOfStatAvgs = async (topTeam, bottomTeam) => {
   const topPlayers = await fetchPlayers(topTeam)
   const bottomPlayers = await fetchPlayers(bottomTeam)
 
@@ -31,5 +32,10 @@ export const basicPredict = async (topTeam, bottomTeam) => {
   const bottomReboundsAvg = teamAvg(bottomPlayers, 'reboundsPerGame')
   const bottomVal = bottomPointsAvg + bottomAssistsAvg + bottomReboundsAvg
 
-  return topVal > bottomVal ? topTeam : bottomTeam
+  return [topVal, bottomVal]
+}
+
+export const winner = async (topTeam, bottomTeam) => {
+  const compVals = await sumOfStatAvgs(topTeam, bottomTeam)
+  return compVals[0] > compVals[1] ? topTeam : bottomTeam
 }

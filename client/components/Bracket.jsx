@@ -9,7 +9,7 @@ import ThirdRound from './ThirdRound'
 import FourthRound from './FourthRound'
 import Winner from './Winner'
 import RunSimulation from './RunSimulation'
-import { basicPredict } from '../predictWinner'
+import { winner } from '../predictWinner'
 import { getUserData } from '../reducer'
 
 class Bracket extends Component {
@@ -34,7 +34,6 @@ class Bracket extends Component {
     try {
       const { data } = await axios.get(`/api/teams`)
       this.setState({ teams: { ...this.state.teams, 1: data } })
-      console.log('props', this.props)
     } catch (error) {
       console.log('Unable to get the teams')
       console.error(error)
@@ -52,8 +51,8 @@ class Bracket extends Component {
       matchups[i] = [currentTeams[i * 2], currentTeams[i * 2 + 1]]
     }
     matchups.forEach(matchup => {
-      const winner = basicPredict(matchup[0], matchup[1])
-      newTeams.push(winner)
+      const winningTeam = winner(matchup[0], matchup[1], this.props.userData) // and the userData
+      newTeams.push(winningTeam)
     })
     newTeams = await Promise.all(newTeams)
     console.log(newTeams)
@@ -66,6 +65,7 @@ class Bracket extends Component {
   }
 
   render() {
+    console.log('data', this.props.userData)
     return (
       <div>
         <Header />
@@ -84,7 +84,7 @@ class Bracket extends Component {
 }
 
 const mapState = state => ({
-  userData: state.userData,
+  userData: state,
 })
 
 const mapDispatch = dispatch => ({
