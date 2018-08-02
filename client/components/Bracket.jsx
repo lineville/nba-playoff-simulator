@@ -9,7 +9,7 @@ import ThirdRound from './ThirdRound'
 import FourthRound from './FourthRound'
 import Winner from './Winner'
 import RunSimulation from './RunSimulation'
-import { winner } from '../predictWinner'
+import { winner } from '../Tools/predictWinner'
 import { getUserData } from '../reducer'
 
 class Bracket extends Component {
@@ -50,8 +50,9 @@ class Bracket extends Component {
     for (let i = 1; i < currentTeams.length / 2; i++) {
       matchups[i] = [currentTeams[i * 2], currentTeams[i * 2 + 1]]
     }
+    // WINNERS COMPUTED HERE
     matchups.forEach(matchup => {
-      const winningTeam = winner(matchup[0], matchup[1], this.props.userData) // and the userData
+      const winningTeam = winner(matchup[0], matchup[1], this.props.userData)
       newTeams.push(winningTeam)
     })
     newTeams = await Promise.all(newTeams)
@@ -65,7 +66,6 @@ class Bracket extends Component {
   }
 
   render() {
-    console.log('data', this.props.userData)
     return (
       <div>
         <Header />

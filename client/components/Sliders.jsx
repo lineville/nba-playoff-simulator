@@ -6,12 +6,12 @@ class Sliders extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      regSeason: 50,
-      points: 50,
-      assists: 50,
-      rebounds: 50,
-      allstar: 50,
-      history: 50,
+      regSeason: 0.5,
+      points: 0.5,
+      assists: 0.5,
+      rebounds: 0.5,
+      allstar: 0.5,
+      history: 0.5,
     }
     this.handleChange = this.handleChange.bind(this)
   }
@@ -28,8 +28,8 @@ class Sliders extends Component {
         <div className="slidecontainer">
           <input
             type="range"
-            min="1"
-            max="100"
+            min="0"
+            max="1"
             className="slider"
             name="regSeason"
             id="regSeason"
@@ -41,8 +41,8 @@ class Sliders extends Component {
         <div className="slidecontainer">
           <input
             type="range"
-            min="1"
-            max="100"
+            min="0"
+            max="1"
             className="slider"
             name="points"
             id="points"
@@ -54,8 +54,8 @@ class Sliders extends Component {
         <div className="slidecontainer">
           <input
             type="range"
-            min="1"
-            max="100"
+            min="0"
+            max="1"
             className="slider"
             name="assists"
             id="assists"
@@ -67,8 +67,8 @@ class Sliders extends Component {
         <div className="slidecontainer">
           <input
             type="range"
-            min="1"
-            max="100"
+            min="0"
+            max="1"
             className="slider"
             name="rebounds"
             id="rebounds"
@@ -80,8 +80,8 @@ class Sliders extends Component {
         <div className="slidecontainer">
           <input
             type="range"
-            min="1"
-            max="100"
+            min="0"
+            max="1"
             className="slider"
             name="allstar"
             id="allstar"
@@ -93,8 +93,8 @@ class Sliders extends Component {
         <div className="slidecontainer">
           <input
             type="range"
-            min="1"
-            max="100"
+            min="0"
+            max="1"
             className="slider"
             name="history"
             id="history"
