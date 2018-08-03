@@ -9,7 +9,7 @@ import ThirdRound from './ThirdRound'
 import FourthRound from './FourthRound'
 import Winner from './Winner'
 import RunSimulation from './RunSimulation'
-import { winner } from '../Tools/predictWinner'
+import { winner } from '../Tools'
 import { getUserData } from '../reducer'
 
 class Bracket extends Component {
@@ -34,7 +34,10 @@ class Bracket extends Component {
     this.props.loadUserData()
     try {
       const { data } = await axios.get(`/api/teams`)
-      this.setState({ teams: { ...this.state.teams, 1: data } })
+      let allTeams = data.sort(function(a, b) {
+        return a.id - b.id
+      })
+      this.setState({ teams: { ...this.state.teams, 1: allTeams } })
     } catch (error) {
       console.log('Unable to get the teams')
       console.error(error)
@@ -51,6 +54,7 @@ class Bracket extends Component {
     for (let i = 1; i < currentTeams.length / 2; i++) {
       matchups[i] = [currentTeams[i * 2], currentTeams[i * 2 + 1]]
     }
+
     // WINNERS COMPUTED HERE
     matchups.forEach(matchup => {
       const winningTeam = winner(matchup[0], matchup[1], this.props.userData)

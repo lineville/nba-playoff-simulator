@@ -4,6 +4,7 @@ const teams = [
     city: 'Houston',
     conference: 'west',
     seed: 1,
+    homeCourt: 9,
     winPCT: 0.793,
     color: '#CE1141',
     logoURL:
@@ -14,6 +15,7 @@ const teams = [
     city: 'Minnesota',
     conference: 'west',
     seed: 8,
+    homeCourt: 16,
     winPCT: 0.573,
     color: '#0C2340',
     logoURL:
@@ -24,6 +26,7 @@ const teams = [
     city: 'Utah',
     conference: 'west',
     seed: 4,
+    homeCourt: 7,
     winPCT: 0.585,
     color: '#002B5C',
     logoURL:
@@ -34,6 +37,7 @@ const teams = [
     city: 'Oklahoma City',
     conference: 'west',
     seed: 5,
+    homeCourt: 1,
     winPCT: 0.585,
     color: '#007AC1',
     logoURL:
@@ -44,6 +48,7 @@ const teams = [
     city: 'Portland',
     conference: 'west',
     seed: 3,
+    homeCourt: 4,
     winPCT: 0.598,
     color: '#E03A3E',
     logoURL:
@@ -54,6 +59,7 @@ const teams = [
     city: 'New Orleans',
     conference: 'west',
     seed: 6,
+    homeCourt: 15,
     winPCT: 0.585,
     color: '#0C2340',
     logoURL:
@@ -64,6 +70,7 @@ const teams = [
     city: 'Golden State',
     conference: 'west',
     seed: 2,
+    homeCourt: 2,
     winPCT: 0.707,
     color: '#006BB6',
     logoURL:
@@ -74,6 +81,7 @@ const teams = [
     city: 'San Antonio',
     conference: 'west',
     seed: 7,
+    homeCourt: 8,
     winPCT: 0.573,
     color: '#000000',
     logoURL:
@@ -84,6 +92,7 @@ const teams = [
     city: 'Toronto',
     conference: 'east',
     seed: 1,
+    homeCourt: 5,
     winPCT: 0.72,
     color: '#CE1141',
     logoURL:
@@ -94,6 +103,7 @@ const teams = [
     city: 'Washington',
     conference: 'east',
     seed: 8,
+    homeCourt: 13,
     winPCT: 0.524,
     color: '#002B5C',
     logoURL:
@@ -104,6 +114,7 @@ const teams = [
     city: 'Cleveland',
     conference: 'east',
     seed: 4,
+    homeCourt: 3,
     winPCT: 0.61,
     color: '#6F263D',
     logoURL:
@@ -114,6 +125,7 @@ const teams = [
     city: 'Indiana',
     conference: 'east',
     seed: 5,
+    homeCourt: 10,
     winPCT: 0.585,
     color: '#FDBB30',
     logoURL:
@@ -124,6 +136,7 @@ const teams = [
     city: 'Philadelphia',
     conference: 'east',
     seed: 3,
+    homeCourt: 12,
     winPCT: 0.634,
     color: '#006BB6',
     logoURL:
@@ -134,6 +147,7 @@ const teams = [
     city: 'Miami',
     conference: 'east',
     seed: 6,
+    homeCourt: 11,
     winPCT: 0.537,
     color: '#98002E',
     logoURL:
@@ -144,6 +158,7 @@ const teams = [
     city: 'Boston',
     conference: 'east',
     seed: 2,
+    homeCourt: 6,
     winPCT: 0.671,
     color: '#007A33',
     logoURL:
@@ -154,6 +169,7 @@ const teams = [
     city: 'Milwaukee',
     conference: 'east',
     seed: 7,
+    homeCourt: 14,
     winPCT: 0.537,
     color: '#00471B',
     logoURL:

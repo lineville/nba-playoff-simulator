@@ -19,6 +19,7 @@ const initState = {
   history: 50,
   seed: 50,
   playerEfficiency: 50,
+  homeCourt: 50,
 }
 
 const reducer = (state = initState, action) => {
