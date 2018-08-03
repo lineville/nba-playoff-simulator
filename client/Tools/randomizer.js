@@ -1,3 +1,5 @@
+const NUM_SIMULATIONS = 10000
+
 const randomValue = (stat, type) => {
   let simulatedVals = []
   let max, min
@@ -21,11 +23,11 @@ const randomValue = (stat, type) => {
     default:
       min = max = stat
   }
-  for (let i = 0; i < 10000; i++) {
+  for (let i = 0; i < NUM_SIMULATIONS; i++) {
     let rand = Math.random() * (max - min) + min
     simulatedVals.push(rand)
   }
-  return simulatedVals.reduce((val, acc) => val + acc, 0) / 1000
+  return simulatedVals.reduce((val, acc) => val + acc, 0) / NUM_SIMULATIONS
 }
 
 export const monteCarloValues = players => {

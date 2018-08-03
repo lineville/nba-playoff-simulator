@@ -24,6 +24,7 @@ class Bracket extends Component {
         4: [],
         5: [],
       },
+      loading: false,
     }
 
     this.nextTeams = this.nextTeams.bind(this)
@@ -37,6 +38,10 @@ class Bracket extends Component {
       let allTeams = data.sort(function(a, b) {
         return a.id - b.id
       })
+      //stash the original seeds for display
+      allTeams.forEach(team => {
+        team.originalSeed = team.seed
+      })
       this.setState({ teams: { ...this.state.teams, 1: allTeams } })
     } catch (error) {
       console.log('Unable to get the teams')
@@ -47,6 +52,10 @@ class Bracket extends Component {
   //gets the remaining teams, pairs the teams up and calculates
   // the new set of winners
   async nextTeams() {
+    //start loading
+    this.setState({
+      loading: true,
+    })
     const currentTeams = this.state.teams[this.state.round]
     let matchups = []
     let newTeams = []
@@ -67,6 +76,10 @@ class Bracket extends Component {
     this.setState({
       teams: { ...this.state.teams, [this.state.round]: newTeams },
     })
+    //start loading
+    this.setState({
+      loading: false,
+    })
   }
 
   reset() {
@@ -86,7 +99,7 @@ class Bracket extends Component {
     return (
       <div>
         <Header />
-        <RunSimulation run={this.nextTeams} />
+        <RunSimulation run={this.nextTeams} isLoading={this.state.loading} />
         <button className="btn btn-outline-warning center" onClick={this.reset}>
           Reset
         </button>

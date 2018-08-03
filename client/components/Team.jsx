@@ -5,7 +5,7 @@ const Team = props => {
   if (team) {
     return (
       <div style={{ color: team.color }}>
-        {team.seed}. {team.name}{' '}
+        {team.originalSeed}. {team.name}{' '}
         <span>
           <img src={team.logoURL} />
         </span>

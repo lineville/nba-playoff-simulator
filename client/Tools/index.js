@@ -1,16 +1,6 @@
 // import axios from 'axios'
 import { monteCarloValues } from './randomizer'
-import { weightedUserValues } from './predictWinner'
-
-// const fetchPlayers = async team => {
-//   try {
-//     const { data } = await axios.get(`/api/teams/${team.id}`)
-//     return data.players
-//   } catch (error) {
-//     console.log('Could not fetch players for', team)
-//     console.error(error)
-//   }
-// }
+import { weightedUserValues } from './userInput'
 
 /*
 -Fetch both teams
@@ -20,7 +10,7 @@ import { weightedUserValues } from './predictWinner'
 -generate a single comparative value
 -return winning team obj
 */
-export const winner = async (topTeam, bottomTeam, userData) => {
+export const winner = (topTeam, bottomTeam, userData) => {
   // let topPlayers = await fetchPlayers(topTeam) //fetching
   // let bottomPlayers = await fetchPlayers(bottomTeam)
 
@@ -33,6 +23,6 @@ export const winner = async (topTeam, bottomTeam, userData) => {
   topTeam = weightedUserValues(topTeam, userData)
   bottomTeam = weightedUserValues(bottomTeam, userData)
 
-  console.log('top', topTeam)
+  // console.log('top', topTeam, 'bottom', bottomTeam)
   return topTeam
 }
