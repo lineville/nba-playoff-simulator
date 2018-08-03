@@ -6,7 +6,7 @@ class Sliders extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      regSeason: 50,
+      winPCT: 50,
       points: 50,
       assists: 50,
       rebounds: 50,
@@ -33,7 +33,7 @@ class Sliders extends Component {
 
   async clear() {
     await this.setState({
-      regSeason: 50,
+      winPCT: 50,
       points: 50,
       assists: 50,
       rebounds: 50,
@@ -59,16 +59,16 @@ class Sliders extends Component {
           Clear Settings
         </button>
         <div>
-          <label htmlFor="regSeason">Regular Season Record</label>
+          <label htmlFor="winPCT">Regular Season Win Percentage</label>
           <div className="slidecontainer">
             <input
               type="range"
               min="1"
               max="100"
               className="slider"
-              name="regSeason"
-              id="regSeason"
-              value={this.state.regSeason}
+              name="winPCT"
+              id="winPCT"
+              value={this.state.winPCT}
               onChange={this.handleChange}
             />
           </div>

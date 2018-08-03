@@ -27,10 +27,16 @@ const randomValue = (stat, type) => {
     let rand = Math.random() * (max - min) + min
     simulatedVals.push(rand)
   }
+
   return simulatedVals.reduce((val, acc) => val + acc, 0) / NUM_SIMULATIONS
 }
 
 export const monteCarloValues = players => {
+  console.log(
+    players[0].name,
+    randomValue(players[0].assistsPerGame),
+    'assists'
+  )
   const newPlayers = []
   players.forEach(player => {
     let newPlayer = {

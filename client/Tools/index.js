@@ -11,19 +11,18 @@ import { comparativeValue } from './condense'
 -generate a single comparative value
 -return winning team obj
 */
-export const winner = (topTeam, bottomTeam, userData) => {
+export const winner = (topTeam, bottomTeam, userData, allTeams) => {
   // let topPlayers = await fetchPlayers(topTeam) //fetching
   // let bottomPlayers = await fetchPlayers(bottomTeam)
 
+  // console.log('top', topTeam, 'bottom', bottomTeam)
   let topPlayers = monteCarloValues(topTeam.players) //random process
   let bottomPlayers = monteCarloValues(bottomTeam.players)
-  console.log(topTeam)
   topTeam = { ...topTeam, players: topPlayers } //reconstruct
   bottomTeam = { ...bottomTeam, players: bottomPlayers }
 
-  topTeam = weightedUserValues(topTeam, userData)
-  bottomTeam = weightedUserValues(bottomTeam, userData)
+  // topTeam = weightedUserValues(topTeam, userData)
+  // bottomTeam = weightedUserValues(bottomTeam, userData)
 
-  console.log('top', topTeam, 'bottom', bottomTeam)
-  return comparativeValue(topTeam, bottomTeam)
+  return comparativeValue(topTeam, bottomTeam, allTeams)
 }

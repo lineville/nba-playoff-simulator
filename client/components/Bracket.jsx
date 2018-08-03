@@ -66,7 +66,12 @@ class Bracket extends Component {
 
     // WINNERS COMPUTED HERE
     matchups.forEach(matchup => {
-      const winningTeam = winner(matchup[0], matchup[1], this.props.userData)
+      const winningTeam = winner(
+        matchup[0],
+        matchup[1],
+        this.props.userData,
+        this.state.teams[1]
+      )
       newTeams.push(winningTeam)
     })
     newTeams = await Promise.all(newTeams)

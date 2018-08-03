@@ -11,7 +11,7 @@ export const getUserData = () => ({
 })
 
 const initState = {
-  regSeason: 50,
+  winPCT: 50,
   points: 50,
   assists: 50,
   rebounds: 50,
