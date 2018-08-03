@@ -1,12 +1,11 @@
 import React from 'react'
 import { RingLoader } from 'react-spinners'
-
-const RunSimulation = ({ run, isLoading }) => {
+const RunSimulation = ({ run, loading }) => {
   return (
     <button className="btn btn-outline-primary center" onClick={run}>
-      Run Simulation{' '}
       <div className="sweet-loading">
-        <RingLoader color="#123abc" loading={isLoading} />
+        Run Simulation
+        <RingLoader color="#123abc" loading={loading} />
       </div>
     </button>
   )

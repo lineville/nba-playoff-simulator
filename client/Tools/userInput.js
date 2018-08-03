@@ -11,8 +11,8 @@ export const weightedUserValues = (team, userData) => {
   })
   //apply user weights to team stats
   team.seed = (9 - team.seed) * scaledData.seed
-  team.regSeason = team.regSeason * scaledData.regSeason
-  team.homeCourt = team.homeCourt * scaledData.homeCourt
+  team.regSeason = team.winPCT * scaledData.regSeason
+  team.homeCourt = (17 - team.homeCourt) * scaledData.homeCourt
 
   return team
 }

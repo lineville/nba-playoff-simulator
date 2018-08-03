@@ -24,7 +24,7 @@ class Bracket extends Component {
         4: [],
         5: [],
       },
-      loading: false,
+      loading: true,
     }
 
     this.nextTeams = this.nextTeams.bind(this)
@@ -99,7 +99,7 @@ class Bracket extends Component {
     return (
       <div>
         <Header />
-        <RunSimulation run={this.nextTeams} isLoading={this.state.loading} />
+        <RunSimulation run={this.nextTeams} loading={this.state.loading} />
         <button className="btn btn-outline-warning center" onClick={this.reset}>
           Reset
         </button>
