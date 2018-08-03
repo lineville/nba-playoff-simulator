@@ -1,11 +1,12 @@
 import axios from 'axios'
+import { monteCarloValues } from './randomizer'
 
 const fetchPlayers = async team => {
   try {
     const { data } = await axios.get(`/api/teams/${team.id}`)
     return data.players
   } catch (error) {
-    console.log('Could not fetch players for', team.name)
+    console.log('Could not fetch players for', team)
     console.error(error)
   }
 }
@@ -63,6 +64,8 @@ const sumOfVals = vals => {
 const weightedValues = async (topTeam, bottomTeam, userData) => {
   //convert user data from 1-100 to 0 - 1
   const scaledData = {}
+  topTeam = await monteCarloValues(topTeam)
+  bottomTeam = await monteCarloValues(bottomTeam)
   Object.keys(userData).forEach(stat => {
     scaledData[stat] = userData[stat] / 100
   })
@@ -82,7 +85,6 @@ const weightedValues = async (topTeam, bottomTeam, userData) => {
 
 export const winner = async (topTeam, bottomTeam, userData) => {
   const values = await weightedValues(topTeam, bottomTeam, userData)
-  console.log(values)
   const compVals = sumOfVals(values)
   return compVals[0] > compVals[1] ? topTeam : bottomTeam
 }
