@@ -82,7 +82,7 @@ const weightedValues = async (topTeam, bottomTeam, userData) => {
 
 export const winner = async (topTeam, bottomTeam, userData) => {
   const values = await weightedValues(topTeam, bottomTeam, userData)
+  console.log(values)
   const compVals = sumOfVals(values)
-  console.log(compVals)
   return compVals[0] > compVals[1] ? topTeam : bottomTeam
 }

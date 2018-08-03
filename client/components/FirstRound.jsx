@@ -5,6 +5,7 @@ const FirstRound = props => {
   const teams = props.teams
   return (
     <ul className="round round-1">
+      <br />
       <li className="spacer">&nbsp;</li>
 
       <li className="game game-top">
@@ -45,6 +46,7 @@ const FirstRound = props => {
         <Team team={teams[7]} />
       </li>
       <li className="spacer">&nbsp;</li>
+
       <br />
       <li className="spacer">&nbsp;</li>
       <li className="game game-top">
