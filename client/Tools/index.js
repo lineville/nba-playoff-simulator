@@ -24,6 +24,7 @@ export const winner = (topTeam, bottomTeam, userData, allTeams) => {
   const weightedTop = weightedUserValues(normalizedDataTop, userData)
   const weightedBottom = weightedUserValues(normalizedDataBottom, userData)
 
+  console.log(weightedTop)
   const topTotalVal = Object.values(weightedTop).reduce((val, acc) => val + acc)
   const bottomTotalVal = Object.values(weightedBottom).reduce(
     (val, acc) => val + acc

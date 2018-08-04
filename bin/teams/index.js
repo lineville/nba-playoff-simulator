@@ -6,6 +6,7 @@ const teams = [
     seed: 1,
     homeCourt: 9,
     winPCT: 0.793,
+    starPower: 20,
     color: '#CE1141',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/houston_rockets_logo.jpg',
@@ -17,6 +18,7 @@ const teams = [
     seed: 8,
     homeCourt: 16,
     winPCT: 0.573,
+    starPower: 10,
     color: '#0C2340',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/minnesota_timberwolves_logo.jpg',
@@ -28,6 +30,7 @@ const teams = [
     seed: 4,
     homeCourt: 7,
     winPCT: 0.585,
+    starPower: 0,
     color: '#002B5C',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/03/utah_jazz_logo.jpg',
@@ -39,6 +42,7 @@ const teams = [
     seed: 5,
     homeCourt: 1,
     winPCT: 0.585,
+    starPower: 23,
     color: '#007AC1',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/oklahoma_city_thunder_logo.jpg',
@@ -50,6 +54,7 @@ const teams = [
     seed: 3,
     homeCourt: 4,
     winPCT: 0.598,
+    starPower: 3,
     color: '#E03A3E',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/03/trailblazers_logo_colors.jpg',
@@ -61,6 +66,7 @@ const teams = [
     seed: 6,
     homeCourt: 15,
     winPCT: 0.585,
+    starPower: 10,
     color: '#0C2340',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/06/new_orleans_pelicans_logo.jpg',
@@ -72,6 +78,7 @@ const teams = [
     seed: 2,
     homeCourt: 2,
     winPCT: 0.707,
+    starPower: 28,
     color: '#006BB6',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/warriors_logo_colors.png',
@@ -83,6 +90,7 @@ const teams = [
     seed: 7,
     homeCourt: 8,
     winPCT: 0.573,
+    starPower: 18,
     color: '#000000',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/03/san_antonio_spurs_logo.jpg',
@@ -94,6 +102,7 @@ const teams = [
     seed: 1,
     homeCourt: 5,
     winPCT: 0.72,
+    starPower: 8,
     color: '#CE1141',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/03/toronto_raptors_logo.jpg',
@@ -105,6 +114,7 @@ const teams = [
     seed: 8,
     homeCourt: 13,
     winPCT: 0.524,
+    starPower: 6,
     color: '#002B5C',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/03/washington_wizards_logo.jpg',
@@ -116,6 +126,7 @@ const teams = [
     seed: 4,
     homeCourt: 3,
     winPCT: 0.61,
+    starPower: 27,
     color: '#6F263D',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/02/2017_cavaliers_logo.png',
@@ -127,6 +138,7 @@ const teams = [
     seed: 5,
     homeCourt: 10,
     winPCT: 0.585,
+    starPower: 1,
     color: '#FDBB30',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/indiana_pacers_logo.jpg',
@@ -138,6 +150,7 @@ const teams = [
     seed: 3,
     homeCourt: 12,
     winPCT: 0.634,
+    starPower: 1,
     color: '#006BB6',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/sixers_logo_colors-768x768.png',
@@ -149,6 +162,7 @@ const teams = [
     seed: 6,
     homeCourt: 11,
     winPCT: 0.537,
+    starPower: 15,
     color: '#98002E',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/miami_heat_logo_colors.png',
@@ -160,6 +174,7 @@ const teams = [
     seed: 2,
     homeCourt: 6,
     winPCT: 0.671,
+    starPower: 5,
     color: '#007A33',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/02/boston_celtics_logo.jpg',
@@ -171,6 +186,7 @@ const teams = [
     seed: 7,
     homeCourt: 14,
     winPCT: 0.537,
+    starPower: 2,
     color: '#00471B',
     logoURL:
       'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/milwaukee_bucks_logo.jpg',
