@@ -11,6 +11,7 @@ import Winner from './Winner'
 import RunSimulation from './RunSimulation'
 import { winner } from '../Tools'
 import { getUserData } from '../reducer'
+import { RingLoader } from 'react-spinners'
 
 class Bracket extends Component {
   constructor() {
@@ -53,7 +54,7 @@ class Bracket extends Component {
   // the new set of winners
   async nextTeams() {
     //start loading
-    this.setState({
+    await this.setState({
       loading: true,
     })
     const currentTeams = this.state.teams[this.state.round]
@@ -82,7 +83,7 @@ class Bracket extends Component {
       teams: { ...this.state.teams, [this.state.round]: newTeams },
     })
     //start loading
-    this.setState({
+    await this.setState({
       loading: false,
     })
   }
@@ -104,7 +105,10 @@ class Bracket extends Component {
     return (
       <div>
         <Header />
-        <RunSimulation run={this.nextTeams} loading={this.state.loading} />
+        <RunSimulation run={this.nextTeams} />
+        <div className="sweet-loading">
+          <RingLoader color="#123abc" loading={this.state.loading} />
+        </div>
         <button className="btn btn-outline-warning center" onClick={this.reset}>
           Reset
         </button>

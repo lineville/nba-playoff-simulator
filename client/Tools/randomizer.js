@@ -1,4 +1,4 @@
-const NUM_SIMULATIONS = 10000
+const NUM_SIMULATIONS = 100
 
 const randomValue = (stat, type) => {
   let simulatedVals = []

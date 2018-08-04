@@ -26,7 +26,6 @@ const averageStat = (players, stat) => {
     total += player[stat]
   })
   let avg = total / players.length
-  // console.log('players', players, 'stat', stat, 'avg', avg)
   return avg
 }
 

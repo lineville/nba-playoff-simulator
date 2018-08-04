@@ -8,7 +8,6 @@ export const weightedUserValues = (teamData, userData) => {
   Object.keys(teamData).forEach(stat => {
     teamData[stat] *= scaledData[stat]
   })
-  console.log(teamData)
 
   return teamData
 }
