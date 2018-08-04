@@ -12,17 +12,21 @@ import { comparativeValue } from './condense'
 -return winning team obj
 */
 export const winner = (topTeam, bottomTeam, userData, allTeams) => {
-  // let topPlayers = await fetchPlayers(topTeam) //fetching
-  // let bottomPlayers = await fetchPlayers(bottomTeam)
-
-  // console.log('top', topTeam, 'bottom', bottomTeam)
-  let topPlayers = monteCarloValues(topTeam.players) //random process
+  let topPlayers = monteCarloValues(topTeam.players)
   let bottomPlayers = monteCarloValues(bottomTeam.players)
-  topTeam = { ...topTeam, players: topPlayers } //reconstruct
+
+  topTeam = { ...topTeam, players: topPlayers }
   bottomTeam = { ...bottomTeam, players: bottomPlayers }
 
-  // topTeam = weightedUserValues(topTeam, userData)
-  // bottomTeam = weightedUserValues(bottomTeam, userData)
+  const normalizedDataTop = comparativeValue(topTeam, allTeams)
+  const normalizedDataBottom = comparativeValue(bottomTeam, allTeams)
 
-  return comparativeValue(topTeam, bottomTeam, allTeams)
+  const weightedTop = weightedUserValues(normalizedDataTop, userData)
+  const weightedBottom = weightedUserValues(normalizedDataBottom, userData)
+
+  const topTotalVal = Object.values(weightedTop).reduce((val, acc) => val + acc)
+  const bottomTotalVal = Object.values(weightedBottom).reduce(
+    (val, acc) => val + acc
+  )
+  return topTotalVal > bottomTotalVal ? topTeam : bottomTeam
 }

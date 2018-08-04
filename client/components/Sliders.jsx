@@ -7,9 +7,9 @@ class Sliders extends Component {
     super(props)
     this.state = {
       winPCT: 50,
-      points: 50,
-      assists: 50,
-      rebounds: 50,
+      pointsPerGame: 50,
+      assistsPerGame: 50,
+      reboundsPerGame: 50,
       allstar: 50,
       history: 50,
       seed: 50,
@@ -34,9 +34,9 @@ class Sliders extends Component {
   async clear() {
     await this.setState({
       winPCT: 50,
-      points: 50,
-      assists: 50,
-      rebounds: 50,
+      pointsPerGame: 50,
+      assistsPerGame: 50,
+      reboundsPerGame: 50,
       allstar: 50,
       history: 50,
       seed: 50,
@@ -72,42 +72,42 @@ class Sliders extends Component {
               onChange={this.handleChange}
             />
           </div>
-          <label htmlFor="points">Points</label>
+          <label htmlFor="pointsPerGame">Points</label>
           <div className="slidecontainer">
             <input
               type="range"
               min="1"
               max="100"
               className="slider"
-              name="points"
-              id="points"
-              value={this.state.points}
+              name="pointsPerGame"
+              id="pointsPerGame"
+              value={this.state.pointsPerGame}
               onChange={this.handleChange}
             />
           </div>
-          <label htmlFor="assists">Assists</label>
+          <label htmlFor="assistsPerGame">Assists</label>
           <div className="slidecontainer">
             <input
               type="range"
               min="1"
               max="100"
               className="slider"
-              name="assists"
-              id="assists"
-              value={this.state.assists}
+              name="assistsPerGame"
+              id="assistsPerGame"
+              value={this.state.assistsPerGame}
               onChange={this.handleChange}
             />
           </div>
-          <label htmlFor="rebounds">Rebounds</label>
+          <label htmlFor="reboundsPerGame">Rebounds</label>
           <div className="slidecontainer">
             <input
               type="range"
               min="1"
               max="100"
               className="slider"
-              name="rebounds"
-              id="rebounds"
-              value={this.state.rebounds}
+              name="reboundsPerGame"
+              id="reboundsPerGame"
+              value={this.state.reboundsPerGame}
               onChange={this.handleChange}
             />
           </div>

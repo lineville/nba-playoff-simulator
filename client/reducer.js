@@ -12,9 +12,9 @@ export const getUserData = () => ({
 
 const initState = {
   winPCT: 50,
-  points: 50,
-  assists: 50,
-  rebounds: 50,
+  pointsPerGame: 50,
+  assistsPerGame: 50,
+  reboundsPerGame: 50,
   allstar: 50,
   history: 50,
   seed: 50,

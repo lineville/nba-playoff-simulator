@@ -28,22 +28,17 @@ const randomValue = (stat, type) => {
     simulatedVals.push(rand)
   }
 
-  return simulatedVals.reduce((val, acc) => val + acc, 0) / NUM_SIMULATIONS
+  return simulatedVals.reduce((val, acc) => val + acc) / NUM_SIMULATIONS
 }
 
 export const monteCarloValues = players => {
-  console.log(
-    players[0].name,
-    randomValue(players[0].assistsPerGame),
-    'assists'
-  )
   const newPlayers = []
   players.forEach(player => {
     let newPlayer = {
       ...player,
       pointsPerGame: randomValue(player.pointsPerGame, 'points'),
-      assistsPerGame: randomValue(player.pointsPerGame, 'assists'),
-      reboundsPerGame: randomValue(player.pointsPerGame, 'rebounds'),
+      assistsPerGame: randomValue(player.assistsPerGame, 'assists'),
+      reboundsPerGame: randomValue(player.reboundsPerGame, 'rebounds'),
       playerEfficiency: randomValue(player.playerEfficiency, 'efficiency'),
     }
     newPlayers.push(newPlayer)

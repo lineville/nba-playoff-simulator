@@ -9,8 +9,8 @@ const individualStats = [
 const createDataSet = team => {
   let dataSet = {
     winPCT: team.winPCT,
-    seed: team.seed,
-    homeCourt: team.homeCourt,
+    seed: 9 - team.seed,
+    homeCourt: 17 - team.homeCourt,
   } //add history later
 
   individualStats.forEach(stat => {
@@ -35,8 +35,8 @@ const transform = (stat, rangeMin, rangeMax) => {
 }
 
 const generateRange = (teams, stat) => {
-  let min = 500
-  let max = 0
+  let min = 1000
+  let max = -1000
   if (individualStats.includes(stat)) {
     teams.forEach(team => {
       team.players.forEach(player => {
@@ -59,19 +59,11 @@ const normalizeData = (team, allTeams) => {
 
   Object.keys(dataSet).forEach(stat => {
     let range = generateRange(allTeams, stat)
-    // console.log('range', range, 'stat', stat, 'val', dataSet[stat])
     newTeam[stat] = transform(dataSet[stat], range[0], range[1])
-    // console.log('after', newTeam[stat])
   })
   return newTeam
 }
 
-export const comparativeValue = (topTeam, bottomTeam, allTeams) => {
-  //TODO
-  // console.log(topTeam.name, topTeam.players)
-  // console.log(topTeam.name, createDataSet(topTeam))
-  // console.log(topTeam.name, normalizeData(topTeam, allTeams))
-
-  let val = Math.random() * (10 - 1) + 1
-  return val > 5 ? topTeam : bottomTeam
+export const comparativeValue = (team, allTeams) => {
+  return normalizeData(team, allTeams)
 }
