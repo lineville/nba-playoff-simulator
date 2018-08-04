@@ -12,6 +12,7 @@ const createDataSet = team => {
     seed: 9 - team.seed,
     homeCourt: 17 - team.homeCourt,
     starPower: team.starPower,
+    history: 17 - team.history,
   } //add history later
 
   individualStats.forEach(stat => {

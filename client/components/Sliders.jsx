@@ -163,7 +163,7 @@ class Sliders extends Component {
               onChange={this.handleChange}
             />
           </div>
-          <label htmlFor="history">Historical Playoff Success TODO</label>
+          <label htmlFor="history">Historical Playoff Success</label>
           <div className="slidecontainer">
             <input
               type="range"
