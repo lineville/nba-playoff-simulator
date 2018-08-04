@@ -1,4 +1,4 @@
-const NUM_SIMULATIONS = 100
+const NUM_SIMULATIONS = 100000
 
 const randomValue = (stat, type) => {
   let simulatedVals = []
@@ -27,7 +27,6 @@ const randomValue = (stat, type) => {
     let rand = Math.random() * (max - min) + min
     simulatedVals.push(rand)
   }
-
   return simulatedVals.reduce((val, acc) => val + acc) / NUM_SIMULATIONS
 }
 

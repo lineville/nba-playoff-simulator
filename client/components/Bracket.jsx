@@ -11,7 +11,7 @@ import Winner from './Winner'
 import RunSimulation from './RunSimulation'
 import { winner } from '../Tools'
 import { getUserData } from '../reducer'
-import { RingLoader } from 'react-spinners'
+import { HashLoader } from 'react-spinners'
 
 class Bracket extends Component {
   constructor() {
@@ -25,11 +25,19 @@ class Bracket extends Component {
         4: [],
         5: [],
       },
-      loading: true,
+      loading: false,
     }
 
     this.nextTeams = this.nextTeams.bind(this)
     this.reset = this.reset.bind(this)
+    this.toggleSpinner = this.toggleSpinner.bind(this)
+  }
+
+  toggleSpinner() {
+    this.setState({
+      loading: !this.state.loading,
+    })
+    console.log(this.state.loading)
   }
 
   async componentDidMount() {
@@ -53,10 +61,6 @@ class Bracket extends Component {
   //gets the remaining teams, pairs the teams up and calculates
   // the new set of winners
   async nextTeams() {
-    //start loading
-    await this.setState({
-      loading: true,
-    })
     const currentTeams = this.state.teams[this.state.round]
     let matchups = []
     let newTeams = []
@@ -75,16 +79,11 @@ class Bracket extends Component {
       )
       newTeams.push(winningTeam)
     })
-    newTeams = await Promise.all(newTeams)
     await this.setState({
       round: this.state.round + 1,
     })
     this.setState({
       teams: { ...this.state.teams, [this.state.round]: newTeams },
-    })
-    //start loading
-    await this.setState({
-      loading: false,
     })
   }
 
@@ -105,10 +104,8 @@ class Bracket extends Component {
     return (
       <div>
         <Header />
-        <RunSimulation run={this.nextTeams} />
-        <div className="sweet-loading">
-          <RingLoader color="#123abc" loading={this.state.loading} />
-        </div>
+        <RunSimulation onClick={this.toggleSpinner} run={this.nextTeams} />
+        <HashLoader color="#123abc" loading={this.state.loading} />
         <button className="btn btn-outline-warning center" onClick={this.reset}>
           Reset
         </button>
