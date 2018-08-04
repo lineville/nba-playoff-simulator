@@ -1,7 +1,9 @@
 import React from 'react'
+import { PulseLoader } from 'react-spinners'
 
 const Team = props => {
-  const team = props.team
+  const { team } = props
+
   if (team) {
     return (
       <div style={{ color: team.color }}>
@@ -12,7 +14,11 @@ const Team = props => {
       </div>
     )
   } else {
-    return <div />
+    return (
+      <div className="sweet-loading">
+        <PulseLoader color="#33DDDD" loading={true} />
+      </div>
+    )
   }
 }
 

@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Team from './Team'
-import Matchup from './Matchup'
 
 const SecondRound = props => {
-  const teams = props.teams
+  const { teams } = props
   return (
     <ul className="round round-2">
       <li className="spacer">&nbsp;</li>

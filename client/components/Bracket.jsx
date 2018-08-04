@@ -10,7 +10,6 @@ import FourthRound from './FourthRound'
 import Winner from './Winner'
 import { winner } from '../Tools'
 import { getUserData } from '../reducer'
-import { HashLoader } from 'react-spinners'
 
 class Bracket extends Component {
   constructor(props) {
@@ -24,7 +23,6 @@ class Bracket extends Component {
         4: [],
         5: [],
       },
-      loading: false,
     }
 
     this.nextTeams = this.nextTeams.bind(this)
@@ -49,10 +47,7 @@ class Bracket extends Component {
     }
   }
 
-  async nextTeams() {
-    await this.setState({
-      loading: true,
-    })
+  nextTeams() {
     const currentTeams = this.state.teams[this.state.round]
     let matchups = []
     let newTeams = []
@@ -71,14 +66,12 @@ class Bracket extends Component {
       )
       newTeams.push(winningTeam)
     })
-    await this.setState({
+    this.setState({
       round: this.state.round + 1,
-    })
-    await this.setState({
-      teams: { ...this.state.teams, [this.state.round]: newTeams },
-    })
-    await this.setState({
-      loading: false,
+      teams: {
+        ...this.state.teams,
+        [this.state.round + 1]: newTeams,
+      },
     })
   }
 
@@ -104,7 +97,6 @@ class Bracket extends Component {
           onClick={this.nextTeams}
         >
           Run Simulation
-          <HashLoader color="#123abc" loading={true} />
         </button>
         <button className="btn btn-outline-warning center" onClick={this.reset}>
           Reset
