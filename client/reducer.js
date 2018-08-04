@@ -20,6 +20,7 @@ const initState = {
   seed: 50,
   playerEfficiency: 50,
   homeCourt: 50,
+  starPower: 50,
 }
 
 const reducer = (state = initState, action) => {

@@ -10,7 +10,7 @@ class Sliders extends Component {
       pointsPerGame: 50,
       assistsPerGame: 50,
       reboundsPerGame: 50,
-      allstar: 50,
+      starPower: 50,
       history: 50,
       seed: 50,
       playerEfficiency: 50,
@@ -37,7 +37,7 @@ class Sliders extends Component {
       pointsPerGame: 50,
       assistsPerGame: 50,
       reboundsPerGame: 50,
-      allstar: 50,
+      starPower: 50,
       history: 50,
       seed: 50,
       playerEfficiency: 50,
@@ -150,16 +150,16 @@ class Sliders extends Component {
               onChange={this.handleChange}
             />
           </div>
-          <label htmlFor="allstar">All Star Power TODO</label>
+          <label htmlFor="starPower">All Star Power</label>
           <div className="slidecontainer">
             <input
               type="range"
               min="1"
               max="100"
               className="slider"
-              name="allstar"
-              id="allstar"
-              value={this.state.allstar}
+              name="starPower"
+              id="starPower"
+              value={this.state.starPower}
               onChange={this.handleChange}
             />
           </div>

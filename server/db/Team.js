@@ -26,6 +26,10 @@ const Team = db.define('team', {
     type: Sequelize.DOUBLE,
     allowNull: false,
   },
+  starPower: {
+    type: Sequelize.INTEGER,
+    allowNull: false,
+  },
   color: {
     type: Sequelize.STRING,
     allowNull: false,
