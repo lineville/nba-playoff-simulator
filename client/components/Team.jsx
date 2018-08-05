@@ -7,8 +7,8 @@ const Team = props => {
 
   if (team) {
     return (
-      <div style={{ color: team.color }}>
-        <Link to={`/teams/${team.id}`}>
+      <div>
+        <Link to={`/teams/${team.id}`} style={{ color: team.color }}>
           {team.originalSeed}. {team.name}{' '}
           <span>
             <img src={team.logoURL} />

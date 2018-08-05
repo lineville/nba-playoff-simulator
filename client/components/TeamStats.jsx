@@ -26,6 +26,9 @@ class TeamStats extends Component {
     if (Object.keys(team).length) {
       return (
         <div className="team-stats">
+          <Link to="/">
+            <button className="btn btn-outline-primary">Back to Bracket</button>
+          </Link>
           <h2>{team.name}</h2>
           <ul>
             <li>Conference: {team.conference}</li>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 import { PulseLoader } from 'react-spinners'
 
 class Player extends Component {
@@ -25,6 +25,16 @@ class Player extends Component {
     if (Object.keys(player).length) {
       return (
         <div className="team-stats">
+          <span>
+            <Link to="/">
+              <button className="btn btn-outline-primary">
+                Back to Bracket
+              </button>
+            </Link>
+            <Link to={`/teams/${player.teamId}`}>
+              <button className="btn btn-outline-success">Back to Team</button>
+            </Link>
+          </span>
           <h2>{player.name}</h2>
           <ul>
             <li>Points Per Game: {player.pointsPerGame}</li>
