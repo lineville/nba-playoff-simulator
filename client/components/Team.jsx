@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { PulseLoader } from 'react-spinners'
 
 const Team = props => {
@@ -7,10 +8,12 @@ const Team = props => {
   if (team) {
     return (
       <div style={{ color: team.color }}>
-        {team.originalSeed}. {team.name}{' '}
-        <span>
-          <img src={team.logoURL} />
-        </span>
+        <Link to={`/teams/${team.id}`}>
+          {team.originalSeed}. {team.name}{' '}
+          <span>
+            <img src={team.logoURL} />
+          </span>
+        </Link>
       </div>
     )
   } else {

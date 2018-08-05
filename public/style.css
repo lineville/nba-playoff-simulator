@@ -17,6 +17,11 @@ img {
   margin: 15px 15px;
 }
 
+.team-stats {
+  list-style-type: none;
+  margin: 20px 20px;
+  font-size: 18px;
+}
 .center {
   text-align: center;
 }

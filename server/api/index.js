@@ -19,4 +19,15 @@ router.get('/teams/:teamId', async (req, res, next) => {
     next(error)
   }
 })
+
+router.get('/teams/:teamId/:playerId', async (req, res, next) => {
+  try {
+    const team = await Team.findById(req.params.teamId, { include: Player })
+    const player = team.players.find(p => p.id == req.params.playerId)
+    res.json(player)
+  } catch (error) {
+    next(error)
+  }
+})
+
 module.exports = router
