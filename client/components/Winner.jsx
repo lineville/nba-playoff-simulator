@@ -5,7 +5,7 @@ const Winner = props => {
   return (
     <ul className="round round-5">
       <li className="spacer">&nbsp;</li>
-      <li className="game game-champion winner-bottom">
+      <li className="game game-champion ">
         <Team team={props.teams[0]} />
       </li>
       <li className="spacer">&nbsp;</li>

@@ -1859,7 +1859,7 @@ var Winner = function Winner(props) {
     ),
     _react2.default.createElement(
       'li',
-      { className: 'game game-champion winner-bottom' },
+      { className: 'game game-champion ' },
       _react2.default.createElement(_Team2.default, { team: props.teams[0] })
     ),
     _react2.default.createElement(
