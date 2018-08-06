@@ -512,7 +512,7 @@ var Bracket = function (_Component) {
         _react2.default.createElement(_Header2.default, null),
         _react2.default.createElement(
           'button',
-          { className: 'btn btn-primary center', onClick: this.nextTeams },
+          { className: 'btn btn-secondary center', onClick: this.nextTeams },
           'Run Simulation'
         ),
         _react2.default.createElement(
@@ -982,7 +982,7 @@ var Player = function (_Component) {
               { to: '/teams/' + player.teamId },
               _react2.default.createElement(
                 'button',
-                { className: 'btn btn-success' },
+                { className: 'btn btn-default' },
                 'Back to Team'
               )
             )
@@ -994,7 +994,7 @@ var Player = function (_Component) {
           ),
           _react2.default.createElement(
             'ul',
-            { className: 'list-group' },
+            { className: 'list-group list-group-flush' },
             _react2.default.createElement(
               'li',
               { className: 'list-group-item list-group-item-success' },
@@ -1664,7 +1664,7 @@ var TeamStats = function (_Component) {
           ),
           _react2.default.createElement(
             'ul',
-            { className: 'list-group' },
+            { className: 'list-group list-group-flush' },
             _react2.default.createElement(
               'li',
               { className: 'list-group-item list-group-item-success' },
@@ -1712,7 +1712,7 @@ var TeamStats = function (_Component) {
           _react2.default.createElement('br', null),
           _react2.default.createElement(
             'ul',
-            { className: 'list-group' },
+            { className: 'list-group list-group-flush' },
             team.players.map(function (player) {
               return _react2.default.createElement(
                 'li',

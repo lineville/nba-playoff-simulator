@@ -30,7 +30,7 @@ class TeamStats extends Component {
             <button className="btn btn-primary">Back to Bracket</button>
           </Link>
           <h2>{team.name}</h2>
-          <ul className="list-group">
+          <ul className="list-group list-group-flush">
             <li className="list-group-item list-group-item-success">
               Conference: {team.conference}
             </li>
@@ -53,7 +53,7 @@ class TeamStats extends Component {
 
           <h4>Players</h4>
           <br />
-          <ul className="list-group">
+          <ul className="list-group list-group-flush">
             {team.players.map(player => (
               <li key={player.id} className="list-group-item">
                 <Link to={`/teams/${team.id}/${player.id}`}>{player.name}</Link>

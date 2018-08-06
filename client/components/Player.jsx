@@ -30,11 +30,11 @@ class Player extends Component {
               <button className="btn btn-primary">Back to Bracket</button>
             </Link>
             <Link to={`/teams/${player.teamId}`}>
-              <button className="btn btn-success">Back to Team</button>
+              <button className="btn btn-default">Back to Team</button>
             </Link>
           </span>
           <h2>{player.name}</h2>
-          <ul className="list-group">
+          <ul className="list-group list-group-flush">
             <li className="list-group-item list-group-item-success">
               Points Per Game: {player.pointsPerGame}
             </li>
