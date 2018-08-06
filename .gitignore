@@ -7,5 +7,3 @@ coverage
 **.m4a
 **.mp4
 server/audio/
-public/bundle.js
-public/bundle.js.map
