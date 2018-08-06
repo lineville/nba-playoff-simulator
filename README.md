@@ -1,4 +1,5 @@
 # NBA Playoff Simulator App
+[Demo App](https://nba-playoff-simulator.herokuapp.com/)
 
 ## Liam Neville Summer 2018
 
