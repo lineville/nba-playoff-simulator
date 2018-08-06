@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import { withRouter, Link } from 'react-router-dom'
 import { PulseLoader } from 'react-spinners'
+import Header from './Header'
 
 class Player extends Component {
   constructor() {
@@ -25,6 +26,7 @@ class Player extends Component {
     if (Object.keys(player).length) {
       return (
         <div className="team-stats">
+          <Header />
           <span>
             <Link to="/">
               <button className="btn btn-primary">Back to Bracket</button>

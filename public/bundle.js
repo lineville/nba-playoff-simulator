@@ -853,8 +853,8 @@ var Header = function Header() {
       { className: "title" },
       _react2.default.createElement(
         "a",
-        { className: "navbar-brand", href: "#" },
-        _react2.default.createElement("img", { src: "favicon.ico", id: "nba-logo", alt: "nba logo" })
+        { className: "navbar-brand", href: "/" },
+        _react2.default.createElement("img", { src: "/favicon.ico", id: "nba-logo", alt: "nba logo" })
       ),
       "2018 NBA Playoffs Simulator"
     )
@@ -892,6 +892,10 @@ var _axios2 = _interopRequireDefault(_axios);
 var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 
 var _reactSpinners = __webpack_require__(/*! react-spinners */ "./node_modules/react-spinners/index.js");
+
+var _Header = __webpack_require__(/*! ./Header */ "./client/components/Header.jsx");
+
+var _Header2 = _interopRequireDefault(_Header);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -965,6 +969,7 @@ var Player = function (_Component) {
         return _react2.default.createElement(
           'div',
           { className: 'team-stats' },
+          _react2.default.createElement(_Header2.default, null),
           _react2.default.createElement(
             'span',
             null,
@@ -1577,6 +1582,10 @@ var _axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 
 var _axios2 = _interopRequireDefault(_axios);
 
+var _Header = __webpack_require__(/*! ./Header */ "./client/components/Header.jsx");
+
+var _Header2 = _interopRequireDefault(_Header);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
@@ -1661,6 +1670,7 @@ var TeamStats = function (_Component) {
         return _react2.default.createElement(
           'div',
           { className: 'team-stats' },
+          _react2.default.createElement(_Header2.default, null),
           _react2.default.createElement(
             _reactRouterDom.Link,
             { to: '/' },
