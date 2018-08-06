@@ -1667,38 +1667,38 @@ var TeamStats = function (_Component) {
             { className: 'list-group list-group-flush' },
             _react2.default.createElement(
               'li',
-              { className: 'list-group-item list-group-item-success' },
+              { className: 'list-group-item' },
               'Conference: ',
               team.conference
             ),
             _react2.default.createElement(
               'li',
-              { className: 'list-group-item list-group-item-danger' },
+              { className: 'list-group-item' },
               'Seed: ',
               team.seed
             ),
             _react2.default.createElement(
               'li',
-              { className: 'list-group-item list-group-item-success' },
+              { className: 'list-group-item' },
               'Regular Season Win Percentage: ',
               team.winPCT
             ),
             _react2.default.createElement(
               'li',
-              { className: 'list-group-item list-group-item-danger' },
+              { className: 'list-group-item' },
               'HomeCourt Advantage Ranking: ',
               team.homeCourt,
               ' out of 16'
             ),
             _react2.default.createElement(
               'li',
-              { className: 'list-group-item list-group-item-success' },
+              { className: 'list-group-item' },
               'Star Power: ',
               team.starPower
             ),
             _react2.default.createElement(
               'li',
-              { className: 'list-group-item list-group-item-danger' },
+              { className: 'list-group-item' },
               'Historical Playoff Success Ranking: ',
               team.history,
               ' out of 16'

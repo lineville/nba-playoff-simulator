@@ -31,22 +31,16 @@ class TeamStats extends Component {
           </Link>
           <h2>{team.name}</h2>
           <ul className="list-group list-group-flush">
-            <li className="list-group-item list-group-item-success">
-              Conference: {team.conference}
-            </li>
-            <li className="list-group-item list-group-item-danger">
-              Seed: {team.seed}
-            </li>
-            <li className="list-group-item list-group-item-success">
+            <li className="list-group-item">Conference: {team.conference}</li>
+            <li className="list-group-item">Seed: {team.seed}</li>
+            <li className="list-group-item">
               Regular Season Win Percentage: {team.winPCT}
             </li>
-            <li className="list-group-item list-group-item-danger">
+            <li className="list-group-item">
               HomeCourt Advantage Ranking: {team.homeCourt} out of 16
             </li>
-            <li className="list-group-item list-group-item-success">
-              Star Power: {team.starPower}
-            </li>
-            <li className="list-group-item list-group-item-danger">
+            <li className="list-group-item">Star Power: {team.starPower}</li>
+            <li className="list-group-item">
               Historical Playoff Success Ranking: {team.history} out of 16
             </li>
           </ul>
