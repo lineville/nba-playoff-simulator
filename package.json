@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server/main.js",
     "start-dev": "webpack -w & nodemon --watch server -e js,html server/main.js",
+    "deploy": "git add -f public/bundle.js public/bundle.js.map; git commit --allow-empty -m 'Deploying'; git push origin master",
     "seed": "node ./bin/seed",
     "test": "npm test"
   },
