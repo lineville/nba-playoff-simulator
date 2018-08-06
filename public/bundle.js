@@ -1596,6 +1596,7 @@ var TeamStats = function (_Component) {
     var _this = _possibleConstructorReturn(this, (TeamStats.__proto__ || Object.getPrototypeOf(TeamStats)).call(this));
 
     _this.state = {};
+    _this.capitalizeConference = _this.capitalizeConference.bind(_this);
     return _this;
   }
 
@@ -1640,10 +1641,15 @@ var TeamStats = function (_Component) {
       return componentDidMount;
     }()
   }, {
+    key: 'capitalizeConference',
+    value: function capitalizeConference(conference) {
+      var result = '' + conference[0].toUpperCase();
+      return result + conference.slice(1);
+    }
+  }, {
     key: 'render',
     value: function render() {
       var team = this.state;
-      console.log(this.state);
       if (Object.keys(team).length) {
         return _react2.default.createElement(
           'div',
@@ -1669,7 +1675,7 @@ var TeamStats = function (_Component) {
               'li',
               { className: 'list-group-item' },
               'Conference: ',
-              team.conference
+              this.capitalizeConference(team.conference)
             ),
             _react2.default.createElement(
               'li',

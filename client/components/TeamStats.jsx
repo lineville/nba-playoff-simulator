@@ -7,6 +7,7 @@ class TeamStats extends Component {
   constructor() {
     super()
     this.state = {}
+    this.capitalizeConference = this.capitalizeConference.bind(this)
   }
 
   async componentDidMount() {
@@ -20,9 +21,13 @@ class TeamStats extends Component {
     }
   }
 
+  capitalizeConference(conference) {
+    let result = '' + conference[0].toUpperCase()
+    return result + conference.slice(1)
+  }
+
   render() {
     const team = this.state
-    console.log(this.state)
     if (Object.keys(team).length) {
       return (
         <div className="team-stats">
@@ -31,7 +36,9 @@ class TeamStats extends Component {
           </Link>
           <h2>{team.name}</h2>
           <ul className="list-group list-group-flush">
-            <li className="list-group-item">Conference: {team.conference}</li>
+            <li className="list-group-item">
+              Conference: {this.capitalizeConference(team.conference)}
+            </li>
             <li className="list-group-item">Seed: {team.seed}</li>
             <li className="list-group-item">
               Regular Season Win Percentage: {team.winPCT}
