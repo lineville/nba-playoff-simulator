@@ -8,6 +8,7 @@ class TeamStats extends Component {
     super()
     this.state = {}
     this.capitalizeConference = this.capitalizeConference.bind(this)
+    this.winPercentage = this.winPercentage.bind(this)
   }
 
   async componentDidMount() {
@@ -26,6 +27,11 @@ class TeamStats extends Component {
     return result + conference.slice(1)
   }
 
+  winPercentage(winPCT) {
+    let result = winPCT * 100
+    return result + ' %'
+  }
+
   render() {
     const team = this.state
     if (Object.keys(team).length) {
@@ -41,7 +47,7 @@ class TeamStats extends Component {
             </li>
             <li className="list-group-item">Seed: {team.seed}</li>
             <li className="list-group-item">
-              Regular Season Win Percentage: {team.winPCT}
+              Regular Season Win Percentage: {this.winPercentage(team.winPCT)}
             </li>
             <li className="list-group-item">
               HomeCourt Advantage Ranking: {team.homeCourt} out of 16

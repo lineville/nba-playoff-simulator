@@ -1597,6 +1597,7 @@ var TeamStats = function (_Component) {
 
     _this.state = {};
     _this.capitalizeConference = _this.capitalizeConference.bind(_this);
+    _this.winPercentage = _this.winPercentage.bind(_this);
     return _this;
   }
 
@@ -1647,6 +1648,12 @@ var TeamStats = function (_Component) {
       return result + conference.slice(1);
     }
   }, {
+    key: 'winPercentage',
+    value: function winPercentage(winPCT) {
+      var result = winPCT * 100;
+      return result + ' %';
+    }
+  }, {
     key: 'render',
     value: function render() {
       var team = this.state;
@@ -1687,7 +1694,7 @@ var TeamStats = function (_Component) {
               'li',
               { className: 'list-group-item' },
               'Regular Season Win Percentage: ',
-              team.winPCT
+              this.winPercentage(team.winPCT)
             ),
             _react2.default.createElement(
               'li',
