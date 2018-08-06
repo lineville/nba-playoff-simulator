@@ -4,7 +4,6 @@ const { db, Player, Team } = require('../db/index')
 router.get('/teams', async (req, res, next) => {
   try {
     const allTeams = await Team.findAll({ include: Player })
-    console.log('allTeams', allTeams)
     res.json(allTeams)
   } catch (error) {
     next(error)
