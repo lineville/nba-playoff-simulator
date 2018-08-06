@@ -9,8 +9,7 @@ const teams = [
     starPower: 20,
     history: 4,
     color: '#CE1141',
-    logoURL:
-      'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/houston_rockets_logo.jpg',
+    logoURL: '/images/rockets.png',
   },
   {
     name: 'Timberwolves',
@@ -22,8 +21,7 @@ const teams = [
     starPower: 10,
     history: 16,
     color: '#0C2340',
-    logoURL:
-      'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/minnesota_timberwolves_logo.jpg',
+    logoURL: '/images/timberwolves.png',
   },
   {
     name: 'Jazz',
@@ -35,8 +33,7 @@ const teams = [
     starPower: 0,
     history: 9,
     color: '#002B5C',
-    logoURL:
-      'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/03/utah_jazz_logo.jpg',
+    logoURL: '/images/jazz.png',
   },
   {
     name: 'Thunder',
@@ -48,8 +45,7 @@ const teams = [
     starPower: 23,
     history: 7,
     color: '#007AC1',
-    logoURL:
-      'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/oklahoma_city_thunder_logo.jpg',
+    logoURL: '/images/thunder.png',
   },
   {
     name: 'Trail Blazers',
@@ -61,8 +57,7 @@ const teams = [
     starPower: 3,
     history: 11,
     color: '#E03A3E',
-    logoURL:
-      'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/03/trailblazers_logo_colors.jpg',
+    logoURL: '/images/trailblazers.png',
   },
   {
     name: 'Pelicans',
@@ -74,8 +69,7 @@ const teams = [
     starPower: 10,
     history: 15,
     color: '#0C2340',
-    logoURL:
-      'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/06/new_orleans_pelicans_logo.jpg',
+    logoURL: '/images/pelicans.png',
   },
   {
     name: 'Warriors',
@@ -87,8 +81,7 @@ const teams = [
     starPower: 28,
     history: 8,
     color: '#006BB6',
-    logoURL:
-      'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/warriors_logo_colors.png',
+    logoURL: '/images/warriors.png',
   },
   {
     name: 'Spurs',
@@ -100,8 +93,7 @@ const teams = [
     starPower: 18,
     history: 1,
     color: '#000000',
-    logoURL:
-      'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/03/san_antonio_spurs_logo.jpg',
+    logoURL: '/images/spurs.png',
   },
   {
     name: 'Raptors',
@@ -113,8 +105,7 @@ const teams = [
     starPower: 8,
     history: 13,
     color: '#CE1141',
-    logoURL:
-      'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/03/toronto_raptors_logo.jpg',
+    logoURL: '/images/raptors.png',
   },
   {
     name: 'Wizards',
@@ -126,8 +117,7 @@ const teams = [
     starPower: 6,
     history: 14,
     color: '#002B5C',
-    logoURL:
-      'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/03/washington_wizards_logo.jpg',
+    logoURL: '/images/wizards.png',
   },
   {
     name: 'Cavaliers',
@@ -139,8 +129,7 @@ const teams = [
     starPower: 27,
     history: 6,
     color: '#6F263D',
-    logoURL:
-      'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/02/2017_cavaliers_logo.png',
+    logoURL: '/images/cavaliers.png',
   },
   {
     name: 'Pacers',
@@ -152,8 +141,7 @@ const teams = [
     starPower: 1,
     history: 10,
     color: '#FDBB30',
-    logoURL:
-      'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/indiana_pacers_logo.jpg',
+    logoURL: '/images/pacers.png',
   },
   {
     name: '76ers',
@@ -165,8 +153,7 @@ const teams = [
     starPower: 1,
     history: 5,
     color: '#006BB6',
-    logoURL:
-      'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/sixers_logo_colors-768x768.png',
+    logoURL: '/images/sixers.png',
   },
   {
     name: 'Heat',
@@ -178,8 +165,7 @@ const teams = [
     starPower: 15,
     history: 3,
     color: '#98002E',
-    logoURL:
-      'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/miami_heat_logo_colors.png',
+    logoURL: '/images/heat.png',
   },
   {
     name: 'Celtics',
@@ -191,7 +177,7 @@ const teams = [
     starPower: 5,
     history: 2,
     color: '#007A33',
-    logoURL: 'celtics.png',
+    logoURL: '/images/celtics.png',
   },
   {
     name: 'Bucks',
@@ -203,8 +189,7 @@ const teams = [
     starPower: 2,
     history: 12,
     color: '#00471B',
-    logoURL:
-      'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2017/03/milwaukee_bucks_logo.jpg',
+    logoURL: '/images/bucks.png',
   },
 ]
 
