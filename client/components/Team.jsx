@@ -6,7 +6,7 @@ const Team = props => {
   const { team } = props
   if (team) {
     return (
-      <div>
+      <div className="team">
         <Link to={`/teams/${team.id}`} style={{ color: team.color }}>
           {team.originalSeed}. {team.name}{' '}
           <span>

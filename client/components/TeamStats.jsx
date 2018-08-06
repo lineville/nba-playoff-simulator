@@ -27,7 +27,7 @@ class TeamStats extends Component {
       return (
         <div className="team-stats">
           <Link to="/">
-            <button className="btn btn-outline-primary">Back to Bracket</button>
+            <button className="btn btn-primary">Back to Bracket</button>
           </Link>
           <h2>{team.name}</h2>
           <ul className="list-group">

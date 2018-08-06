@@ -90,15 +90,12 @@ class Bracket extends Component {
 
   render() {
     return (
-      <div>
+      <div className="bracket">
         <Header />
-        <button
-          className="btn btn-outline-primary center"
-          onClick={this.nextTeams}
-        >
+        <button className="btn btn-primary center" onClick={this.nextTeams}>
           Run Simulation
         </button>
-        <button className="btn btn-outline-warning center" onClick={this.reset}>
+        <button className="btn btn-warning center" onClick={this.reset}>
           Reset
         </button>
         <main id="tournament">

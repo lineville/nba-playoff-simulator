@@ -1,5 +1,7 @@
 body {
-  background-color: rgb(247, 247, 247);
+  /* background-color: rgb(247, 247, 247); */
+  background-image: url('http://www.kinyu-z.net/data/wallpapers/236/1532329.jpg');
+  background-size: cover;
 }
 
 img {
@@ -9,11 +11,13 @@ img {
   z-index: 2;
   position: relative;
 }
+
 .sliders {
   border: 2px solid #33dddd;
   margin: 20px 20px;
   height: 50%;
   float: right;
+  font-size: 18px;
 }
 .sweet-loading {
   margin-left: 40px;
@@ -38,6 +42,11 @@ img {
 
 .title {
   text-align: center;
+  color: white;
+}
+
+.team {
+  font-size: 16px;
 }
 
 li.game.winner-top {

@@ -508,19 +508,16 @@ var Bracket = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        null,
+        { className: 'bracket' },
         _react2.default.createElement(_Header2.default, null),
         _react2.default.createElement(
           'button',
-          {
-            className: 'btn btn-outline-primary center',
-            onClick: this.nextTeams
-          },
+          { className: 'btn btn-primary center', onClick: this.nextTeams },
           'Run Simulation'
         ),
         _react2.default.createElement(
           'button',
-          { className: 'btn btn-outline-warning center', onClick: this.reset },
+          { className: 'btn btn-warning center', onClick: this.reset },
           'Reset'
         ),
         _react2.default.createElement(
@@ -976,7 +973,7 @@ var Player = function (_Component) {
               { to: '/' },
               _react2.default.createElement(
                 'button',
-                { className: 'btn btn-outline-primary' },
+                { className: 'btn btn-primary' },
                 'Back to Bracket'
               )
             ),
@@ -985,7 +982,7 @@ var Player = function (_Component) {
               { to: '/teams/' + player.teamId },
               _react2.default.createElement(
                 'button',
-                { className: 'btn btn-outline-success' },
+                { className: 'btn btn-success' },
                 'Back to Team'
               )
             )
@@ -1292,15 +1289,12 @@ var Sliders = function (_Component) {
         { className: 'sliders' },
         _react2.default.createElement(
           'button',
-          {
-            className: 'btn btn-outline-success center',
-            onClick: this.handleSave
-          },
+          { className: 'btn btn-success center', onClick: this.handleSave },
           'Save Settings'
         ),
         _react2.default.createElement(
           'button',
-          { className: 'btn btn-outline-danger center', onClick: this.clear },
+          { className: 'btn btn-danger center', onClick: this.clear },
           'Clear Settings'
         ),
         _react2.default.createElement(
@@ -1527,7 +1521,7 @@ var Team = function Team(props) {
   if (team) {
     return _react2.default.createElement(
       'div',
-      null,
+      { className: 'team' },
       _react2.default.createElement(
         _reactRouterDom.Link,
         { to: '/teams/' + team.id, style: { color: team.color } },
@@ -1659,7 +1653,7 @@ var TeamStats = function (_Component) {
             { to: '/' },
             _react2.default.createElement(
               'button',
-              { className: 'btn btn-outline-primary' },
+              { className: 'btn btn-primary' },
               'Back to Bracket'
             )
           ),

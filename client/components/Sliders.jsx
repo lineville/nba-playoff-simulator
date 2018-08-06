@@ -49,13 +49,10 @@ class Sliders extends Component {
   render() {
     return (
       <div className="sliders">
-        <button
-          className="btn btn-outline-success center"
-          onClick={this.handleSave}
-        >
+        <button className="btn btn-success center" onClick={this.handleSave}>
           Save Settings
         </button>
-        <button className="btn btn-outline-danger center" onClick={this.clear}>
+        <button className="btn btn-danger center" onClick={this.clear}>
           Clear Settings
         </button>
         <div className="center">

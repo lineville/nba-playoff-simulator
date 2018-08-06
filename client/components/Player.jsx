@@ -27,12 +27,10 @@ class Player extends Component {
         <div className="team-stats">
           <span>
             <Link to="/">
-              <button className="btn btn-outline-primary">
-                Back to Bracket
-              </button>
+              <button className="btn btn-primary">Back to Bracket</button>
             </Link>
             <Link to={`/teams/${player.teamId}`}>
-              <button className="btn btn-outline-success">Back to Team</button>
+              <button className="btn btn-success">Back to Team</button>
             </Link>
           </span>
           <h2>{player.name}</h2>
