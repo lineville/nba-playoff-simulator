@@ -191,8 +191,7 @@ const teams = [
     starPower: 5,
     history: 2,
     color: '#007A33',
-    logoURL:
-      'https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/02/boston_celtics_logo.jpg',
+    logoURL: '../images/celtics.png',
   },
   {
     name: 'Bucks',
