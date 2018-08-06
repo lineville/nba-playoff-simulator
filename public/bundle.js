@@ -997,37 +997,37 @@ var Player = function (_Component) {
             { className: 'list-group list-group-flush' },
             _react2.default.createElement(
               'li',
-              { className: 'list-group-item list-group-item-success' },
+              { className: 'list-group-item' },
               'Points Per Game: ',
               player.pointsPerGame
             ),
             _react2.default.createElement(
               'li',
-              { className: 'list-group-item list-group-item-danger' },
+              { className: 'list-group-item' },
               'Assists Per Game: ',
               player.assistsPerGame
             ),
             _react2.default.createElement(
               'li',
-              { className: 'list-group-item list-group-item-success' },
+              { className: 'list-group-item' },
               'Rebounds Per Game: ',
               player.reboundsPerGame
             ),
             _react2.default.createElement(
               'li',
-              { className: 'list-group-item list-group-item-danger' },
+              { className: 'list-group-item' },
               'Player Efficiency Rating: ',
               player.playerEfficiency
             ),
             _react2.default.createElement(
               'li',
-              { className: 'list-group-item list-group-item-success' },
+              { className: 'list-group-item' },
               'All Star Game Appearances: ',
               player.allStarGames
             ),
             _react2.default.createElement(
               'li',
-              { className: 'list-group-item list-group-item-danger' },
+              { className: 'list-group-item' },
               'Number of MVPs or Finals MVPs: ',
               player.mvps
             )
