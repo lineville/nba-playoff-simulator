@@ -11,9 +11,13 @@ img {
   z-index: 2;
   position: relative;
 }
-
+.card {
+  height: 50% !important;
+  background-color: rgb(225, 221, 221);
+  margin: 20px 20px;
+}
 .sliders {
-  border: 5px solid #000;
+  /* border: 5px solid #000; */
   margin: 20px 20px;
   height: 50%;
   float: right;

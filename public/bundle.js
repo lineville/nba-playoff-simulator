@@ -1291,190 +1291,237 @@ var Sliders = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'sliders' },
-        _react2.default.createElement(
-          'button',
-          { className: 'btn btn-success center', onClick: this.handleSave },
-          'Save Settings'
-        ),
-        _react2.default.createElement(
-          'button',
-          { className: 'btn btn-danger center', onClick: this.clear },
-          'Clear Settings'
-        ),
+        { className: 'card' },
         _react2.default.createElement(
           'div',
-          { className: 'center' },
-          _react2.default.createElement(
-            'label',
-            { htmlFor: 'winPCT' },
-            'Regular Season Win Percentage'
-          ),
+          { className: 'sliders card-body' },
           _react2.default.createElement(
             'div',
-            { className: 'slidecontainer' },
-            _react2.default.createElement('input', {
-              type: 'range',
-              min: '1',
-              max: '100',
-              className: 'slider',
-              name: 'winPCT',
-              id: 'winPCT',
-              value: this.state.winPCT,
-              onChange: this.handleChange
-            })
-          ),
-          _react2.default.createElement(
-            'label',
-            { htmlFor: 'pointsPerGame' },
-            'Points'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'slidecontainer' },
-            _react2.default.createElement('input', {
-              type: 'range',
-              min: '1',
-              max: '100',
-              className: 'slider',
-              name: 'pointsPerGame',
-              id: 'pointsPerGame',
-              value: this.state.pointsPerGame,
-              onChange: this.handleChange
-            })
-          ),
-          _react2.default.createElement(
-            'label',
-            { htmlFor: 'assistsPerGame' },
-            'Assists'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'slidecontainer' },
-            _react2.default.createElement('input', {
-              type: 'range',
-              min: '1',
-              max: '100',
-              className: 'slider',
-              name: 'assistsPerGame',
-              id: 'assistsPerGame',
-              value: this.state.assistsPerGame,
-              onChange: this.handleChange
-            })
-          ),
-          _react2.default.createElement(
-            'label',
-            { htmlFor: 'reboundsPerGame' },
-            'Rebounds'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'slidecontainer' },
-            _react2.default.createElement('input', {
-              type: 'range',
-              min: '1',
-              max: '100',
-              className: 'slider',
-              name: 'reboundsPerGame',
-              id: 'reboundsPerGame',
-              value: this.state.reboundsPerGame,
-              onChange: this.handleChange
-            })
-          ),
-          _react2.default.createElement(
-            'label',
-            { htmlFor: 'playerEfficiency' },
-            'Player Efficiency'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'slidecontainer' },
-            _react2.default.createElement('input', {
-              type: 'range',
-              min: '1',
-              max: '100',
-              className: 'slider',
-              name: 'playerEfficiency',
-              id: 'playerEfficiency',
-              value: this.state.playerEfficiency,
-              onChange: this.handleChange
-            })
-          ),
-          _react2.default.createElement(
-            'label',
-            { htmlFor: 'seed' },
-            'Seed'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'slidecontainer' },
-            _react2.default.createElement('input', {
-              type: 'range',
-              min: '1',
-              max: '100',
-              className: 'slider',
-              name: 'seed',
-              id: 'seed',
-              value: this.state.seed,
-              onChange: this.handleChange
-            })
-          ),
-          _react2.default.createElement(
-            'label',
-            { htmlFor: 'homeCourt' },
-            'Home Court Advantage'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'slidecontainer' },
-            _react2.default.createElement('input', {
-              type: 'range',
-              min: '1',
-              max: '100',
-              className: 'slider',
-              name: 'homeCourt',
-              id: 'homeCourt',
-              value: this.state.homeCourt,
-              onChange: this.handleChange
-            })
-          ),
-          _react2.default.createElement(
-            'label',
-            { htmlFor: 'starPower' },
-            'All Star Power'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'slidecontainer' },
-            _react2.default.createElement('input', {
-              type: 'range',
-              min: '1',
-              max: '100',
-              className: 'slider',
-              name: 'starPower',
-              id: 'starPower',
-              value: this.state.starPower,
-              onChange: this.handleChange
-            })
-          ),
-          _react2.default.createElement(
-            'label',
-            { htmlFor: 'history' },
-            'Historical Playoff Success'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'slidecontainer' },
-            _react2.default.createElement('input', {
-              type: 'range',
-              min: '1',
-              max: '100',
-              className: 'slider',
-              name: 'history',
-              id: 'history',
-              value: this.state.history,
-              onChange: this.handleChange
-            })
+            { className: 'center' },
+            _react2.default.createElement(
+              'ul',
+              { className: 'list-group list-group-flush' },
+              _react2.default.createElement(
+                'li',
+                { className: 'list-group-item' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'winPCT' },
+                  'Regular Season Win Percentage'
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'slidecontainer' },
+                  _react2.default.createElement('input', {
+                    type: 'range',
+                    min: '1',
+                    max: '100',
+                    className: 'slider',
+                    name: 'winPCT',
+                    id: 'winPCT',
+                    value: this.state.winPCT,
+                    onChange: this.handleChange
+                  })
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'list-group-item' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'pointsPerGame' },
+                  'Points'
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'slidecontainer' },
+                  _react2.default.createElement('input', {
+                    type: 'range',
+                    min: '1',
+                    max: '100',
+                    className: 'slider',
+                    name: 'pointsPerGame',
+                    id: 'pointsPerGame',
+                    value: this.state.pointsPerGame,
+                    onChange: this.handleChange
+                  })
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'list-group-item' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'assistsPerGame' },
+                  'Assists'
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'slidecontainer' },
+                  _react2.default.createElement('input', {
+                    type: 'range',
+                    min: '1',
+                    max: '100',
+                    className: 'slider',
+                    name: 'assistsPerGame',
+                    id: 'assistsPerGame',
+                    value: this.state.assistsPerGame,
+                    onChange: this.handleChange
+                  })
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'list-group-item' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'reboundsPerGame' },
+                  'Rebounds'
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'slidecontainer' },
+                  _react2.default.createElement('input', {
+                    type: 'range',
+                    min: '1',
+                    max: '100',
+                    className: 'slider',
+                    name: 'reboundsPerGame',
+                    id: 'reboundsPerGame',
+                    value: this.state.reboundsPerGame,
+                    onChange: this.handleChange
+                  })
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'list-group-item' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'playerEfficiency' },
+                  'Player Efficiency'
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'slidecontainer' },
+                  _react2.default.createElement('input', {
+                    type: 'range',
+                    min: '1',
+                    max: '100',
+                    className: 'slider',
+                    name: 'playerEfficiency',
+                    id: 'playerEfficiency',
+                    value: this.state.playerEfficiency,
+                    onChange: this.handleChange
+                  })
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'list-group-item' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'seed' },
+                  'Seed'
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'slidecontainer' },
+                  _react2.default.createElement('input', {
+                    type: 'range',
+                    min: '1',
+                    max: '100',
+                    className: 'slider',
+                    name: 'seed',
+                    id: 'seed',
+                    value: this.state.seed,
+                    onChange: this.handleChange
+                  })
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'list-group-item' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'homeCourt' },
+                  'Home Court Advantage'
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'slidecontainer' },
+                  _react2.default.createElement('input', {
+                    type: 'range',
+                    min: '1',
+                    max: '100',
+                    className: 'slider',
+                    name: 'homeCourt',
+                    id: 'homeCourt',
+                    value: this.state.homeCourt,
+                    onChange: this.handleChange
+                  })
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'list-group-item' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'starPower' },
+                  'All Star Power'
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'slidecontainer' },
+                  _react2.default.createElement('input', {
+                    type: 'range',
+                    min: '1',
+                    max: '100',
+                    className: 'slider',
+                    name: 'starPower',
+                    id: 'starPower',
+                    value: this.state.starPower,
+                    onChange: this.handleChange
+                  })
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'list-group-item' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'history' },
+                  'Historical Playoff Success'
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'slidecontainer' },
+                  _react2.default.createElement('input', {
+                    type: 'range',
+                    min: '1',
+                    max: '100',
+                    className: 'slider',
+                    name: 'history',
+                    id: 'history',
+                    value: this.state.history,
+                    onChange: this.handleChange
+                  })
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'button',
+              {
+                className: 'btn btn-success center',
+                onClick: this.handleSave
+              },
+              'Save Settings'
+            ),
+            _react2.default.createElement(
+              'button',
+              { className: 'btn btn-danger center', onClick: this.clear },
+              'Clear Settings'
+            )
           )
         )
       );
