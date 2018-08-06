@@ -5,7 +5,7 @@ const Header = () => {
     <div>
       <h1 className="title">
         <a className="navbar-brand" href="#">
-          <img src="nba-logo.png" id="nba-logo" alt="nba logo" />
+          <img src="favicon.ico" id="nba-logo" alt="nba logo" />
         </a>2018 NBA Playoffs Simulator
       </h1>
     </div>

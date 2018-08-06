@@ -857,7 +857,7 @@ var Header = function Header() {
       _react2.default.createElement(
         "a",
         { className: "navbar-brand", href: "#" },
-        _react2.default.createElement("img", { src: "nba-logo.png", id: "nba-logo", alt: "nba logo" })
+        _react2.default.createElement("img", { src: "favicon.ico", id: "nba-logo", alt: "nba logo" })
       ),
       "2018 NBA Playoffs Simulator"
     )
