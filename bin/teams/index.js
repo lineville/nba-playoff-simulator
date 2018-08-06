@@ -191,7 +191,7 @@ const teams = [
     starPower: 5,
     history: 2,
     color: '#007A33',
-    logoURL: '../images/celtics.png',
+    logoURL: 'celtics.png',
   },
   {
     name: 'Bucks',
