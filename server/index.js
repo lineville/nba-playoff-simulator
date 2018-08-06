@@ -16,16 +16,16 @@ app.use(express.static(path.join(__dirname, '..', 'public')))
 
 app.use('/api', require('./api'))
 
+app.get('/', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '..', 'client', 'index.html'))
+})
+
 app.use((req, res, next) => {
   if (path.extname(req.path).length > 0) {
     res.status(404).end()
   } else {
     next()
   }
-})
-
-app.get('/', (req, res, next) => {
-  res.sendFile(path.join(__dirname, '..', 'client', 'index.html'))
 })
 
 app.use((err, req, res, next) => {
