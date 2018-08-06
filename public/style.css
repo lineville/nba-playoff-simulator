@@ -9,7 +9,12 @@ img {
   z-index: 2;
   position: relative;
 }
-
+.sliders {
+  border: 2px solid #33dddd;
+  margin: 20px 20px;
+  height: 50%;
+  float: right;
+}
 .sweet-loading {
   margin-left: 40px;
 }

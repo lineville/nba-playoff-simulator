@@ -48,7 +48,7 @@ class Sliders extends Component {
 
   render() {
     return (
-      <div>
+      <div className="sliders">
         <button
           className="btn btn-outline-success center"
           onClick={this.handleSave}
@@ -58,7 +58,7 @@ class Sliders extends Component {
         <button className="btn btn-outline-danger center" onClick={this.clear}>
           Clear Settings
         </button>
-        <div>
+        <div className="center">
           <label htmlFor="winPCT">Regular Season Win Percentage</label>
           <div className="slidecontainer">
             <input

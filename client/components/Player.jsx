@@ -36,13 +36,25 @@ class Player extends Component {
             </Link>
           </span>
           <h2>{player.name}</h2>
-          <ul>
-            <li>Points Per Game: {player.pointsPerGame}</li>
-            <li>Assists Per Game: {player.assistsPerGame}</li>
-            <li>Rebounds Per Game: {player.reboundsPerGame}</li>
-            <li>Player Efficiency Rating: {player.playerEfficiency}</li>
-            <li>All Star Game Appearances: {player.allStarGames}</li>
-            <li>Number of MVPS or Finals MVPS: {player.mvps}</li>
+          <ul className="list-group">
+            <li className="list-group-item list-group-item-success">
+              Points Per Game: {player.pointsPerGame}
+            </li>
+            <li className="list-group-item list-group-item-danger">
+              Assists Per Game: {player.assistsPerGame}
+            </li>
+            <li className="list-group-item list-group-item-success">
+              Rebounds Per Game: {player.reboundsPerGame}
+            </li>
+            <li className="list-group-item list-group-item-danger">
+              Player Efficiency Rating: {player.playerEfficiency}
+            </li>
+            <li className="list-group-item list-group-item-success">
+              All Star Game Appearances: {player.allStarGames}
+            </li>
+            <li className="list-group-item list-group-item-danger">
+              Number of MVPs or Finals MVPs: {player.mvps}
+            </li>
           </ul>
         </div>
       )

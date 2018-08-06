@@ -30,22 +30,32 @@ class TeamStats extends Component {
             <button className="btn btn-outline-primary">Back to Bracket</button>
           </Link>
           <h2>{team.name}</h2>
-          <ul>
-            <li>Conference: {team.conference}</li>
-            <li>Seed: {team.seed}</li>
-            <li>Regular Season Win Percentage: {team.winPCT}</li>
-            <li>HomeCourt Advantage Ranking: {team.homeCourt} out of 16</li>
-            <li>Star Power: {team.starPower}</li>
-            <li>
+          <ul className="list-group">
+            <li className="list-group-item list-group-item-success">
+              Conference: {team.conference}
+            </li>
+            <li className="list-group-item list-group-item-danger">
+              Seed: {team.seed}
+            </li>
+            <li className="list-group-item list-group-item-success">
+              Regular Season Win Percentage: {team.winPCT}
+            </li>
+            <li className="list-group-item list-group-item-danger">
+              HomeCourt Advantage Ranking: {team.homeCourt} out of 16
+            </li>
+            <li className="list-group-item list-group-item-success">
+              Star Power: {team.starPower}
+            </li>
+            <li className="list-group-item list-group-item-danger">
               Historical Playoff Success Ranking: {team.history} out of 16
             </li>
           </ul>
 
-          <h3>Players</h3>
+          <h4>Players</h4>
           <br />
-          <ul>
+          <ul className="list-group">
             {team.players.map(player => (
-              <li key={player.id}>
+              <li key={player.id} className="list-group-item">
                 <Link to={`/teams/${team.id}/${player.id}`}>{player.name}</Link>
               </li>
             ))}

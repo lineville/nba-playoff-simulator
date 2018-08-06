@@ -4,7 +4,6 @@ import { PulseLoader } from 'react-spinners'
 
 const Team = props => {
   const { team } = props
-
   if (team) {
     return (
       <div>
