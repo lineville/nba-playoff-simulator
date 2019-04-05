@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const { db, Player, Team } = require('../server/db')
-const { teams, allPlayers } = require('./teams/index')
+const { teams, allPlayers } = require('./teams2019/index')
 
 const seed = async () => {
   await db.sync({ force: true })

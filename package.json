@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server/main.js",
     "start-dev": "webpack -w & nodemon --watch server -e js,html server/main.js",
-    "seed": "node ./bin/seed",
+    "seed18": "node ./bin/seed",
     "test": "npm test"
   },
   "repository": {
