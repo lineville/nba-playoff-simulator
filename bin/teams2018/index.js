@@ -8,7 +8,7 @@ const teams = [
     winPCT: 0.793,
     starPower: 20,
     history: 4,
-    color: '#CE1141',
+    color: '#',
     logoURL: '/images/rockets.png',
   },
   {
@@ -20,7 +20,7 @@ const teams = [
     winPCT: 0.573,
     starPower: 10,
     history: 16,
-    color: '#0C2340',
+    color: '#1172a6',
     logoURL: '/images/timberwolves.png',
   },
   {
@@ -32,7 +32,7 @@ const teams = [
     winPCT: 0.585,
     starPower: 0,
     history: 9,
-    color: '#002B5C',
+    color: '#44f2e4',
     logoURL: '/images/jazz.png',
   },
   {
@@ -92,7 +92,7 @@ const teams = [
     winPCT: 0.573,
     starPower: 18,
     history: 1,
-    color: '#000000',
+    color: '#ababab',
     logoURL: '/images/spurs.png',
   },
   {
@@ -116,7 +116,7 @@ const teams = [
     winPCT: 0.524,
     starPower: 6,
     history: 14,
-    color: '#002B5C',
+    color: '#1230db',
     logoURL: '/images/wizards.png',
   },
   {
@@ -188,7 +188,7 @@ const teams = [
     winPCT: 0.537,
     starPower: 2,
     history: 12,
-    color: '#00471B',
+    color: '#00782c',
     logoURL: '/images/bucks.png',
   },
 ]
