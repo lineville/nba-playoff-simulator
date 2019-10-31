@@ -1,7 +1,12 @@
 body {
-  /* background-color: rgb(247, 247, 247); */
-  background-image: url('http://www.kinyu-z.net/data/wallpapers/236/1532329.jpg');
+  background-color: #222222;
+  color: #ffffff;
+  /* background-image: url('http://www.kinyu-z.net/data/wallpapers/236/1532329.jpg'); */
   background-size: cover;
+  font-family: sans-serif;
+  font-size: small;
+  padding: 10px;
+  line-height: 1.4em;
 }
 
 img {
@@ -99,15 +104,6 @@ main {
 .round .game-spacer {
   flex-grow: 1;
   z-index: 0;
-}
-/*
- *  General Styles
-*/
-body {
-  font-family: sans-serif;
-  font-size: small;
-  padding: 10px;
-  line-height: 1.4em;
 }
 
 li.game {
