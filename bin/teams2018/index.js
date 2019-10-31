@@ -68,7 +68,7 @@ const teams = [
     winPCT: 0.585,
     starPower: 10,
     history: 15,
-    color: '#0C2340',
+    color: '#1a0dab',
     logoURL: '/images/pelicans.png',
   },
   {
