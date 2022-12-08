@@ -27,7 +27,7 @@
     "axios": "^0.18.1",
     "body-parser": "^1.18.3",
     "bootstrap": "^4.3.1",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "mdbootstrap": "^4.5.8",
     "morgan": "^1.9.1",
     "pg": "^7.4.3",
