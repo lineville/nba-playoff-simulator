@@ -53,6 +53,6 @@
     "nodemon": "^1.17.5",
     "redux-logger": "^3.0.6",
     "webpack": "^4.16.1",
-    "webpack-cli": "^3.0.8"
+    "webpack-cli": "^3.3.12"
   }
 }
